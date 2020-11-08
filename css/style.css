@@ -64,6 +64,17 @@ img {
   margin: 0;
 }
 
+.button {
+  padding: 10px 10px;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+  background-color: var(--red);
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+
 /*Header*/
 
 .nav-user {
@@ -137,7 +148,7 @@ img {
   color: var(--indigo);
 }
 
-.personal-area a{
+.personal-area a {
   font-size: 21px;
   line-height: 21px;
   align-items: center;
@@ -153,7 +164,7 @@ img {
   color: var(--gray-clik);
 }
 
-.nav-website a{
+.nav-website a {
   font-size: 18px;
   line-height: 24px;
   color: var(--white);
@@ -165,6 +176,132 @@ img {
   background-color: var(--indigo-dark);
 }
 
-.nav-website a:active  {
+.nav-website a:active {
   color: rgba(255, 255, 255, 0.5);
+}
+
+/*Main popular-categories*/
+
+.popular-categories {
+  display: block;
+  padding: 30px 20px;
+  max-width: 300px;
+  color: var(--white);
+  background-color: var(--yellow);
+}
+
+.popular-categories h3 {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  align-items: center;
+}
+
+.popular-categories a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.popular-categories--tool {
+  background-color: var(--blue);
+}
+
+.popular-categories--technique {
+  background-color: var(--lilac);
+}
+
+.popular-categories--discount {
+  background-color: var(--light-green);
+}
+
+.popular-categories-gallery {
+  color: var(--white);
+}
+
+.popular-categories-gallery h3{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.popular-categories-gallery--perforators {
+  width: 620px;
+  height: 266px;
+  background-image: url("../img/index/perforators-img.jpg");
+  background-repeat: no-repeat;
+}
+
+.popular-categories-gallery--drills {
+  display: none;
+  width: 620px;
+  height: 266px;
+  background-image: url("../img/index/dreli-img.jpg");
+  background-repeat: no-repeat;
+}
+
+.section-gallery {
+  position: relative;
+}
+
+.slider-buttons {
+  position:absolute;
+  top: 40px;
+  left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-button {
+  width: 22px;
+  height: 40px;
+  background-color: transparent;
+}
+
+.slider-button--left {
+  background-image: url("../img/index/icon-left.svg");
+}
+
+.slider-button--right {
+  background-image: url("../img/index/icon-right.svg");
+}
+
+.popular-group {
+  max-width: 940px;
+  background-color: var(--crem);
+}
+
+.popular-group h2{
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--indigo);
+}
+
+.card {
+  padding: 18px 0;
+  max-width: 220px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  border: 1px solid var(--gray);
+  text-align: center;
+}
+
+.card h3 {
+  max-width: 185px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.card p {
+  text-decoration: line-through;
+  color: var(--gray-clik);
 }
