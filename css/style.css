@@ -7,7 +7,10 @@
   --red: #EE3643;
   --red-hover: #CA2C37;
   --red-clik: #BA2732;
+  --red-dark: #B52933;
+  --red-dark-clik: #8D1E26;
   --gray: #C5C5C5;
+  --gray-background: #F3F7F8;
   --light-gray: #888888;
   --gray-hover: #B5B5B5;
   --gray-clik: #A9A9A9;
@@ -22,7 +25,7 @@
 }
 
 body {
-  min-width: 940px;
+  min-width: 960px;
   margin: 0;
   padding: 0;
   font-family: 'Cuprum', sans-serif;
@@ -40,4 +43,128 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  border: 0;
+}
+
+.reset-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*Header*/
+
+.nav-user {
+  align-items: center;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+  background-color: var(--indigo);
+}
+
+.nav-user a {
+  color: var(--white);
+}
+
+.nav-user input {
+  color: var(--white);
+  background-color: var(--indigo);
+  border: none;
+}
+
+.nav-user a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-user input:focus {
+  color: var(--black);
+  background-color: var(--white);
+  outline: none;
+}
+
+.logo-header {
+  display: block;
+  align-items: center;
+  padding: 8px;
+  max-width: 220px;
+  background-color: var(--red);
+  border-bottom: 5px solid var(--red-dark);
+}
+
+.logo-header:active {
+  background-color: var(--red-clik);
+  border-bottom: 5px solid var(--red-dark-clik);
+}
+
+.nav {
+  background-color: var(--gray-background);
+}
+
+.nav-paragraph {
+  max-width: 198px;
+  color: var(--red);
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+}
+
+.tel-number-header {
+  align-items: center;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  color: var(--red);
+  border: 3px solid var(--white);
+}
+
+.address-header {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+  color: var(--indigo);
+}
+
+.personal-area a{
+  font-size: 21px;
+  line-height: 21px;
+  align-items: center;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.personal-area a:hover {
+  color: var(--red);
+}
+
+.personal-area a:active {
+  color: var(--gray-clik);
+}
+
+.nav-website a{
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+  background-color: var(--indigo);
+  border-bottom: 5px solid var(--indigo-dark);
+}
+
+.nav-website a:hover {
+  background-color: var(--indigo-dark);
+}
+
+.nav-website a:active  {
+  color: rgba(255, 255, 255, 0.5);
 }

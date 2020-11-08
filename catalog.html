@@ -10,67 +10,83 @@
 </head>
 <body>
 <header>
-  <section>
-    <h2>Навигация для пользователя</h2>
-    <a href="#">
-      <img src="img/header/logo_tehnomart.svg" alt="Логотип Техномарт" width="220" height="47">
-    </a>
-    <a href="#">Поиск</a>
-    <a href="#">Закладки</a>
-    <a href="#">Корзина</a>
-    <a href="#">Оформить заказ</a>
-  </section>
-  <section>
-    <h2>Навигация для пользователя с адресом и телефоном</h2>
-    <p>
-      Интернет-магазин
-      строительных материалов
-      и инструментов для ремонта
-    </p>
-    <a href="tel:+78125550555">+7(812)-555-05-55</a>
-    <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+  <div class="nav">
     <section>
-      <h2>Личный кабинет</h2>
-      <ul>
+      <h2 class="nav-user visually-hidden">Навигация для пользователя</h2>
+      <ul class="nav-user reset-list">
         <li>
-          <a href="#">Равшан Джамшутович</a>
+          <a class="logo-header" href="index.html">
+            <img src="img/header/logo_tehnomart.svg" alt="Логотип Техномарт" width="108" height="18">
+          </a>
         </li>
         <li>
-          <a href="#">Выход</a>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="text" name="search" value="Поиск" aria-label="Поиск на сайте">
+          </form>
+        </li>
+        <li>
+          <a href="#">Закладки</a>
+        </li>
+        <li>
+          <a href="#">Корзина</a>
+        </li>
+        <li>
+          <a href="#">Оформить заказ</a>
         </li>
       </ul>
     </section>
-  </section>
-  <nav>
-    <ul>
-      <li>
-        <a href="index.html">Главная</a>
-      </li>
-      <li>
-        <a href="#">Компания</a>
-      </li>
-      <li>
-        <a href="#">Каталог</a>
-      </li>
-      <li>
-        <a href="#">Новости</a>
-      </li>
-      <li>
-        <a href="#">Спецпредложения</a>
-      </li>
-      <li>
-        <a href="#">Доставка</a>
-      </li>
-      <li>
-        <a href="#">Контакты</a>
-      </li>
-    </ul>
-  </nav>
+    <section>
+      <h2 class="visually-hidden">Навигация для пользователя с адресом и телефоном</h2>
+      <p class="nav-paragraph">
+        Интернет-магазин
+        строительных материалов
+        и инструментов для ремонта
+      </p>
+      <a class="tel-number-header" href="tel:+78125550555">+7(812)-555-05-55</a>
+      <address class="address-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+      <section>
+        <h2 class="visually-hidden">Личный кабинет</h2>
+        <ul class="reset-list">
+          <li>
+            <a href="#">Равшан Джамшутович</a>
+          </li>
+          <li>
+            <a href="#">Выход</a>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <nav>
+      <ul class="nav-website reset-list">
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="#">Компания</a>
+        </li>
+        <li>
+          <a href="#">Каталог</a>
+        </li>
+        <li>
+          <a href="#">Новости</a>
+        </li>
+        <li>
+          <a href="#">Спецпредложения</a>
+        </li>
+        <li>
+          <a href="#">Доставка</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <main>
   <section>
-    <h2>Страница каталога интернет-магазина</h2>
-    <ul>
+    <h1 class="visually-hidden">Страница каталога интернет-магазина</h1>
+    <ul class="reset-list">
       <li>
         <a href="#">Домой</a>
       </li>
@@ -92,7 +108,7 @@
     <h2>Фильтр:</h2>
     <section>
       <h3>Сортировка</h3>
-      <ul>
+      <ul class="reset-list">
         <li>
           <a href="#">По цене</a>
         </li>
@@ -103,7 +119,7 @@
           <a href="#">По функционалу</a>
         </li>
       </ul>
-      <ul>
+      <ul class="reset-list">
         <li>
           <a href="#">
             <img src="img/catalog/up.svg" alt="Вверх" width="12" height="10">
@@ -131,7 +147,7 @@
       </fieldset>
       <fieldset>
         <legend>Производители</legend>
-        <ul>
+        <ul class="reset-list">
           <li>
             <label>
               <input type="checkbox" name="check-box" checked>
@@ -166,7 +182,7 @@
       </fieldset>
       <fieldset>
         <legend>Питание</legend>
-        <ul>
+        <ul class="reset-list">
           <li>
             <label>
               <input type="radio" name="radio" checked>
@@ -186,7 +202,7 @@
   </section>
   <section>
     <h2>Секция карточек товара</h2>
-    <ul>
+    <ul class="reset-list">
       <li>
         <article>
           <img alt="Карточка товара Перфоратора BOSCH BFG 6000" src="img/index/BOSCHBFG6000.png" width="144"
@@ -262,8 +278,8 @@
     </ul>
   </section>
   <section>
-    <h2>Пагинация</h2>
-    <ul>
+    <h2 class="visually-hidden">Пагинация</h2>
+    <ul class="reset-list">
       <li>
         <a href="#" aria-label="Страница первая">1</a>
       </li>
@@ -279,7 +295,7 @@
     </ul>
   </section>
   <section>
-    <h2>Пара слов р перфораторах</h2>
+    <h2>Пара слов о перфораторах</h2>
     <p>
       Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
       бетоне и камне.
@@ -292,7 +308,7 @@
 </main>
 <footer>
   <section>
-    <h2>Навигация для пользователя внизу сайта</h2>
+    <h2 class="visually-hidden">Навигация для пользователя внизу сайта</h2>
     <a href="#">
       <img src="img/footer/logo-tehno-footer.svg" alt="Логотип Техномарт" width="220" height="68">
     </a>
@@ -300,7 +316,7 @@
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
     </address>
     <a href="tel:+78125550555">+7(812)-555-05-55</a>
-    <ul>
+    <ul class="reset-list">
       <li>
         <a href="#">Компания</a>
       </li>
@@ -333,12 +349,12 @@
     </ul>
   </section>
   <section>
-    <h2>Секция обратной связи</h2>
+    <h2 class="visually-hidden">Секция обратной связи</h2>
     <p>
       © 2010–2019 Компания «Техномарт»
       Все права защищены
     </p>
-    <ul>
+    <ul class="reset-list">
       <li>
         <a href="#">
           <img src="img/footer/logo-vk.svg" alt="Вконтакте">
@@ -366,7 +382,7 @@
   </section>
 </footer>
 <section>
-  <h2>Напишите нам</h2>
+  <h2 class="visually-hidden">Напишите нам</h2>
   <form action="https://echo.htmlacademy.ru" method="post">
     <label>
       Ваше имя:
@@ -385,6 +401,7 @@
   <button type="button" aria-label="Закрыть">Закрыть</button>
 </section>
 <section>
+  <h2 class="visually-hidden">Карта</h2>
   <img src="img/footer/map.png" width="970" height="477" alt=" Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
   <button type="button" aria-label="Закрыть">Закрыть</button>
 </section>
