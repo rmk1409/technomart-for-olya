@@ -3,6 +3,8 @@
   --indigo: #32425C;
   --indigo-dark: #293449;
   --indigo-supper-dark: #212A3A;
+  --indigo-dark-border: #293449;
+  --indigo-light-border: #405069;
   --white: #FFFFFF;
   --red: #EE3643;
   --red-hover: #CA2C37;
@@ -21,7 +23,7 @@
   --green-hover: #5FBB2D;
   --green-clik: #518534;
   --light-green: #8ED78F;
-  --crem: #F9F5F0;
+  --crem: #f9f5f0;
 }
 
 body {
@@ -29,7 +31,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Cuprum', sans-serif;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 24px;
   font-weight: normal;
   color: var(--black);
@@ -65,14 +67,18 @@ img {
 }
 
 .button {
+  display: block;
   padding: 10px 10px;
+  width: 192px;
   font-size: 14px;
   line-height: 18px;
   color: var(--white);
+  text-align: center;
   background-color: var(--red);
   border: none;
   outline: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /*Header*/
@@ -105,7 +111,7 @@ img {
   outline: none;
 }
 
-.logo-header {
+.logo {
   display: block;
   align-items: center;
   padding: 8px;
@@ -277,10 +283,14 @@ img {
   background-color: var(--crem);
 }
 
-.popular-group h2{
+.title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  color: var(--black);
+}
+
+.popular-group .title {
   color: var(--indigo);
 }
 
@@ -304,4 +314,138 @@ img {
 .card p {
   text-decoration: line-through;
   color: var(--gray-clik);
+}
+
+.services-title {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.services-title {
+  color: var(--indigo);
+}
+
+.services-paragraph {
+  max-width: 356px;
+}
+
+.button--services {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  background-color: var(--indigo);
+  text-transform: none;
+  text-align: left;
+  border-top: 1px solid var(--indigo-light-border);
+  border-bottom: 1px solid var(--indigo-dark-border);
+}
+
+.button--services:hover,
+.button--services-active:hover {
+  color: var(--white);
+  background-color: var(--indigo-dark);
+}
+
+.button--services-active {
+  color: var(--indigo);
+  background-color: var(--white);
+}
+
+.service-delivery {
+  display: block;
+}
+
+.service-guarantee,
+.service-credit {
+  display: none;
+}
+
+.services-group {
+  background-color: var(--gray-background);
+}
+
+.about-us-paragraph {
+  width: 403px;
+}
+
+.transport-companies {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contact-paragraph {
+  width: 181px;
+}
+
+/*Footer*/
+
+.section-footer-nav {
+  background-color: var(--indigo);
+}
+
+.address-footer,
+.address-footer a {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+}
+
+.footer-nav,
+.footer-nav a{
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+}
+
+.footer-nav--popular a{
+  color: var(--yellow);
+}
+
+.section-footer-feedback {
+  background-color: var(--indigo-dark);
+}
+
+.feedback-paragraph {
+  margin: 0;
+  width: 228px;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white);
+}
+
+.feedback-paragraph a {
+  color: var(--yellow);
+}
+
+/*Section Wright us*/
+
+.section-wright-us {
+  display: block;
+  background-color: var(--white);
+  border-top: 7px solid var(--red);
+}
+
+.background {
+  background-color: var(--gray-background);
+}
+
+.lable {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.input-text {
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--gray-clik);
+  border: 2px solid var(--gray-clik);
+  border-radius: 2px;
+  resize: none;
+}
+
+.section-map {
+  width: 943px;
+  height: 449px;
+  border-top: 7px solid var(--red);
 }

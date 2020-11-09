@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин строительных материалов и инструментов для ремонта</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -15,13 +17,14 @@
       <h2 class="visually-hidden">Навигация для пользователя</h2>
       <ul class="nav-user reset-list">
         <li>
-          <a class="logo-header" href="#">
+          <a class="logo logo--header" href="#">
             <img src="img/header/logo_tehnomart.svg" alt="Логотип Техномарт" width="108" height="18">
           </a>
         </li>
         <li>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <input type="text" name="search" value="Поиск">
+            <label class="visually-hidden" for="search">Поиск</label>
+            <input type="text" name="search" value="Поиск" id="search">
           </form>
         </li>
         <li>
@@ -92,7 +95,7 @@
       </li>
       <li class="popular-categories popular-categories--tool">
         <h3>Инструмент</h3>
-        <a class="button"  href="#">На все случаи</a>
+        <a class="button" href="#">На все случаи</a>
       </li>
       <li class="popular-categories popular-categories--technique">
         <h3>Техника</h3>
@@ -122,17 +125,19 @@
       </ul>
       <ul class="slider-buttons reset-list">
         <li>
-          <button class="button slider-button slider-button--left" type="button" aria-label="Кнопка слайдера назад"></button>
+          <button class="button slider-button slider-button--left" type="button"
+                  aria-label="Кнопка слайдера назад"></button>
         </li>
         <li>
-          <button class="button slider-button slider-button--right" type="button" aria-label="Кнопка слайдера вперед"></button>
+          <button class="button slider-button slider-button--right" type="button"
+                  aria-label="Кнопка слайдера вперед"></button>
         </li>
       </ul>
     </section>
   </section>
   <section>
     <div class="popular-group">
-      <h2>Популярные товары:</h2>
+      <h2 class="title">Популярные товары:</h2>
       <button class="button">Все популярные товары</button>
     </div>
     <ul class="reset-list">
@@ -191,7 +196,7 @@
   </section>
   <section>
     <div class="popular-group">
-      <h2>Популярные производители:</h2>
+      <h2 class="title">Популярные производители:</h2>
       <button class="button">Все производители</button>
     </div>
     <ul class="reset-list">
@@ -218,7 +223,7 @@
                height="76">
         </a>
       </li>
-      <li class="card" >
+      <li class="card">
         <a href="#">
           <img alt="Ссылка на сайт производителя Hitachi" src="img/index/manufacturer-hitachi.png" width="169"
                height="31">
@@ -242,94 +247,95 @@
       </li>
     </ul>
   </section>
-  <section>
-    <h2>Сервисы</h2>
-    <p>
+  <section class="services-group">
+    <h2 class="title">Сервисы</h2>
+    <p class="services-paragraph">
       Хороший интернет-магазин отличается от плохого не только ценами!
       Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
     </p>
     <ul class="reset-list">
       <li>
-        <a href="#">Доставка</a>
+        <button class="button button--services button--services-active">Доставка</button>
       </li>
       <li>
-        <a href="#">Гарантия</a>
+        <button class="button button--services">Гарантия</button>
       </li>
       <li>
-        <a href="#">Кредит</a>
+        <button class="button button--services">Кредит</button>
       </li>
     </ul>
     <ul class="reset-list">
-      <li>
-        <h3>Доставка</h3>
-        <p>
-          Мы с удовольствием доставим ваш товар прямо
-          к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем,
+      <li class="service-delivery">
+        <h3 class="title services-title">Доставка</h3>
+        <p class="services-paragraph">
+          Мы с удовольствием доставим ваш товар прямо <br>
+          к вашему подъезду совершенно бесплатно!<br>
+          Ведь мы неплохо заработаем,<br>
           поднимая его на ваш этаж!
         </p>
       </li>
-      <li>
-        <h3>Гарантия</h3>
-        <p>
-          Если купленный у нас товар поломается или заискрит,
-          а также в случае пожара, спровоцированного его
-          возгоранием, вы всегда можете быть уверены в нашей
-          гарантии. Мы обменяем сгоревший товар на новый.
+      <li class="service-guarantee">
+        <h3 class="title services-title">Гарантия</h3>
+        <p class="services-paragraph">
+          Если купленный у нас товар поломается или заискрит,<br>
+          а также в случае пожара, спровоцированного его <br>
+          возгоранием, вы всегда можете быть уверены в нашей <br>
+          гарантии. Мы обменяем сгоревший товар на новый.<br>
           Дом уж восстановите как-нибудь сами.
         </p>
       </li>
-      <li>
-        <h3>Кредит</h3>
-        <p>
-          Залезть в долговую яму стало проще!
+      <li class="service-credit">
+        <h3 class="title services-title">Кредит</h3>
+        <p class="services-paragraph">
+          Залезть в долговую яму стало проще! <br>
           Кредитные консультанты придут вам на помощь.
         </p>
-        <a href="#">Оформить</a>
+        <a class="button" href="#">Оформить</a>
       </li>
     </ul>
   </section>
   <section>
     <h2 class="visually-hidden">О нас</h2>
     <section>
-      <h3>Компания "Техномарт"</h3>
-      <p>
+      <h3 class="title">Компания "Техномарт"</h3>
+      <p class="about-us-paragraph">
         Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
         ремонта и строительства не оставит равнодушными любителей сэкономить на
         гастарбайтерах.
       </p>
-      <p>
+      <p class="about-us-paragraph">
         Мы можем доставить ваш товар в самые отдаленные точки России!
         Техномарт работает со многими транспортными компаниями:
       </p>
-      <ul>
+      <ul class="transport-companies reset-list">
         <li>Деловые линии</li>
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
     </section>
+    <button class="button">Подробнее о компании</button>
     <section>
-      <h2>Контакты</h2>
-      <p>
+      <h2 class="title">Контакты</h2>
+      <p class="contact-paragraph">
         Вы можете забрать товар сами,
         заехав в наш офис:
       </p>
       <img src="img/index/map.png" alt="Картинка карты" width="300" height="158">
-      <button>Заблудились? Напишите нам!</button>
+      <button class="button">Заблудились? Напишите нам!</button>
     </section>
   </section>
 </main>
 <footer>
-  <section>
+  <section class="section-footer-nav">
     <h2 class="visually-hidden">Навигация для пользователя внизу сайта</h2>
-    <a href="#">
-      <img src="img/footer/logo-tehno-footer.svg" alt="Логотип Техномарт" width="220" height="68">
+    <a class="logo" href="#">
+      <img src="img/header/logo_tehnomart.svg" alt="Логотип Техномарт" width="136" height="21">
     </a>
-    <address>
-      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+    <address class="address-footer">
+      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+      <a href="tel:+78125550555">+7(812)-555-05-55</a>
     </address>
-    <a href="tel:+78125550555">+7(812)-555-05-55</a>
-    <ul class="reset-list">
+    <ul class="footer-nav reset-list">
       <li>
         <a href="#">Компания</a>
       </li>
@@ -346,7 +352,7 @@
         <a href="#">Контакты</a>
       </li>
     </ul>
-    <ul>
+    <ul class="footer-nav footer-nav--popular reset-list">
       <li>
         <a href="#">Материалы</a>
       </li>
@@ -361,9 +367,9 @@
       </li>
     </ul>
   </section>
-  <section>
+  <section class="section-footer-feedback">
     <h2 class="visually-hidden">Секция обратной связи</h2>
-    <p>
+    <p class="feedback-paragraph">
       © 2010–2019 Компания «Техномарт»
       Все права защищены
     </p>
@@ -384,39 +390,41 @@
         </a>
       </li>
     </ul>
-    <p>
+    <p class="feedback-paragraph">
       Обратная связь:
       <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
     </p>
-    <p>
+    <p class="feedback-paragraph">
       Разработано —
       <a href="#">htmlacademy.ru</a>
     </p>
   </section>
 </footer>
-<section>
+<section class="section-wright-us">
   <h2 class="visually-hidden">Напишите нам</h2>
   <form action="https://echo.htmlacademy.ru" method="post">
-    <label>
+    <label class="lable">
       Ваше имя:
-      <input type="text" name="name" value="Имя Фамилия">
+      <input class="input-text" type="text" name="name" value="Имя Фамилия">
     </label>
-    <label>
+    <label class="lable">
       Ваш e-mail:
-      <input type="email" name="email" value="email@example.com">
+      <input class="input-text"  type="email" name="email" value="email@example.com">
     </label>
-    <label>
+    <label class="lable">
       Текст письма
-      <textarea name="letter" placeholder="В свободной форме"></textarea>
+      <textarea class="input-text"  name="letter" placeholder="В свободной форме"></textarea>
     </label>
-    <button type="submit">Отравить</button>
+    <div class="background">
+    <button class="button" type="submit">Отравить</button>
+    </div>
   </form>
-  <button type="button" aria-label="Закрыть">Закрыть</button>
+  <button class="button" type="button" aria-label="Закрыть">Закрыть</button>
 </section>
-<section>
+<section class="section-map">
   <h2 class="visually-hidden">Карта</h2>
   <img src="img/footer/map.png" width="970" height="477" alt=" Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-  <button type="button" aria-label="Закрыть">Закрыть</button>
+  <button class="button" type="button" aria-label="Закрыть">Закрыть</button>
 </section>
 </body>
 </html>
