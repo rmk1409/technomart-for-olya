@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог интернет-магазина строительных материалов и инструментов для ремонта</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -46,12 +48,20 @@
       <address class="address-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
       <section>
         <h2 class="visually-hidden">Личный кабинет</h2>
-        <ul class="reset-list">
+        <ul class="personal-area reset-list">
           <li>
             <a href="#">Равшан Джамшутович</a>
           </li>
           <li>
             <a href="#">Выход</a>
+          </li>
+        </ul>
+        <ul class="personal-links reset-list">
+          <li>
+            <a href="#">Мои заказы</a>
+          </li>
+          <li>
+            <a href="#">Личный кабинет</a>
           </li>
         </ul>
       </section>
@@ -86,7 +96,7 @@
 <main>
   <section>
     <h1 class="visually-hidden">Страница каталога интернет-магазина</h1>
-    <ul class="reset-list">
+    <ul class="bread-crumbs subtitle-catalog reset-list">
       <li>
         <a href="#">Домой</a>
       </li>
@@ -102,13 +112,15 @@
     </ul>
   </section>
   <section>
-    <h2>Перфораторы</h2>
+    <div class="popular-group">
+      <h2 class="title">Перфораторы</h2>
+    </div>
   </section>
   <section>
-    <h2>Фильтр:</h2>
+    <h2 class="subtitle-catalog">Фильтр:</h2>
     <section>
-      <h3>Сортировка</h3>
-      <ul class="reset-list">
+      <h3 class="subtitle-catalog">Сортировка</h3>
+      <ul class="subtitle-catalog reset-list">
         <li>
           <a href="#">По цене</a>
         </li>
@@ -133,78 +145,78 @@
       </ul>
     </section>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <fieldset>
-        <legend>Стоимость</legend>
-        <label>
+      <fieldset class="fieldset-border--reset">
+        <legend class="legend-subtitle">Цена</legend>
+        <label class="label-subtitle">
           <input type="range" min="0" max="30000" step="10">
         </label>
-        <label>
+        <label class="label-subtitle">
           <input type="number" name="min-price" value="0" min="0">
         </label>
-        <label>
+        <label class="label-subtitle">
           <input type="number" name="max-price" value="30000" max="30000">
         </label>
       </fieldset>
-      <fieldset>
-        <legend>Производители</legend>
+      <fieldset class="fieldset-border--reset">
+        <legend class="legend-subtitle">Производители</legend>
         <ul class="reset-list">
           <li>
-            <label>
+            <label class="label-subtitle">
               <input type="checkbox" name="check-box" checked>
               Bosh
             </label>
           </li>
           <li>
-            <label>
+            <label class="label-subtitle">
               <input type="checkbox" name="check-box">
               Интерскол
             </label>
           </li>
           <li>
-            <label>
+            <label class="label-subtitle">
               <input type="checkbox" name="check-box" checked>
               Makita
             </label>
           </li>
           <li>
-            <label>
+            <label class="label-subtitle">
               <input type="checkbox" name="check-box">
               Dewalt
             </label>
           </li>
           <li>
-            <label>
+            <label class="label-subtitle">
               <input type="checkbox" name="check-box">
               Hitachi
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset>
-        <legend>Питание</legend>
+      <fieldset class="fieldset-border--reset">
+        <legend class="legend-subtitle">Питание</legend>
         <ul class="reset-list">
           <li>
-            <label>
+            <label class="label-subtitle">
               <input type="radio" name="radio" checked>
               Аккумуляторные
             </label>
           </li>
           <li>
-            <label>
+            <label class="label-subtitle">
               <input type="radio" name="radio">
               Сетевые
             </label>
           </li>
         </ul>
       </fieldset>
-      <button>Показать</button>
+      <button class="button">Показать</button>
     </form>
   </section>
   <section>
     <h2>Секция карточек товара</h2>
     <ul class="reset-list">
       <li>
-        <article>
+        <article class="card">
           <img alt="Карточка товара Перфоратора BOSCH BFG 6000" src="img/index/BOSCHBFG6000.png" width="144"
                height="128">
           <h3>
@@ -212,11 +224,21 @@
             BFG 6000
           </h3>
           <p>30500 Р.</p>
-          <button>25500 Р.</button>
+          <button class="button button--cost">25500 Р.</button>
+          <section class="section-hover-card">
+            <ul class="reset-list">
+              <li>
+                <button class="button">Купить</button>
+              </li>
+              <li>
+                <button class="button">В закладки</button>
+              </li>
+            </ul>
+          </section>
         </article>
       </li>
       <li>
-        <article>
+        <article class="card">
           <img alt="Карточка товара Перфоратора BOSCH BFG 6000" src="img/index/BOSCHBFG6000.png" width="144"
                height="128">
           <h3>
@@ -224,11 +246,21 @@
             BFG 6000
           </h3>
           <p>30500 Р.</p>
-          <button>25500 Р.</button>
+          <button class="button button--cost">25500 Р.</button>
+          <section class="section-hover-card">
+            <ul class="reset-list">
+              <li>
+                <button class="button">Купить</button>
+              </li>
+              <li>
+                <button class="button">В закладки</button>
+              </li>
+            </ul>
+          </section>
         </article>
       </li>
       <li>
-        <article>
+        <article class="card">
           <img alt="Карточка товара Перфоратора BOSCH BFG 6000" src="img/index/BOSCHBFG6000.png" width="144"
                height="128">
           <h3>
@@ -236,11 +268,21 @@
             BFG 6000
           </h3>
           <p>30500 Р.</p>
-          <button>25500 Р.</button>
+          <button class="button button--cost">25500 Р.</button>
+          <section class="section-hover-card">
+            <ul class="reset-list">
+              <li>
+                <button class="button">Купить</button>
+              </li>
+              <li>
+                <button class="button">В закладки</button>
+              </li>
+            </ul>
+          </section>
         </article>
       </li>
       <li>
-        <article>
+        <article class="card">
           <img alt="Карточка товара Перфоратора BOSCH BFG 6000" src="img/index/BOSCHBFG6000.png" width="144"
                height="128">
           <h3>
@@ -248,11 +290,21 @@
             BFG 6000
           </h3>
           <p>30500 Р.</p>
-          <button>25500 Р.</button>
+          <button class="button button--cost">25500 Р.</button>
+          <section class="section-hover-card">
+            <ul class="reset-list">
+              <li>
+                <button class="button">Купить</button>
+              </li>
+              <li>
+                <button class="button">В закладки</button>
+              </li>
+            </ul>
+          </section>
         </article>
       </li>
       <li>
-        <article>
+        <article class="card">
           <img alt="Карточка товара Перфоратора BOSCH BFG 6000" src="img/index/BOSCHBFG6000.png" width="144"
                height="128">
           <h3>
@@ -260,11 +312,21 @@
             BFG 6000
           </h3>
           <p>30500 Р.</p>
-          <button>25500 Р.</button>
+          <button class="button button--cost">25500 Р.</button>
+          <section class="section-hover-card">
+            <ul class="reset-list">
+              <li>
+                <button class="button">Купить</button>
+              </li>
+              <li>
+                <button class="button">В закладки</button>
+              </li>
+            </ul>
+          </section>
         </article>
       </li>
       <li>
-        <article>
+        <article class="card">
           <img alt="Карточка товара Перфоратора BOSCH BFG 6000" src="img/index/BOSCHBFG6000.png" width="144"
                height="128">
           <h3>
@@ -272,7 +334,17 @@
             BFG 6000
           </h3>
           <p>30500 Р.</p>
-          <button>25500 Р.</button>
+          <button class="button button--cost">25500 Р.</button>
+          <section class="section-hover-card">
+            <ul class="reset-list">
+              <li>
+                <button class="button">Купить</button>
+              </li>
+              <li>
+                <button class="button">В закладки</button>
+              </li>
+            </ul>
+          </section>
         </article>
       </li>
     </ul>
@@ -281,21 +353,21 @@
     <h2 class="visually-hidden">Пагинация</h2>
     <ul class="reset-list">
       <li>
-        <a href="#" aria-label="Страница первая">1</a>
+        <a class="button" href="#" aria-label="Страница первая">1</a>
       </li>
       <li>
-        <a href="#" aria-label="Страница вторая">2</a>
+        <a class="button" href="#" aria-label="Страница вторая">2</a>
       </li>
       <li>
-        <a href="#" aria-label="Страница третья">3</a>
+        <a class="button" href="#" aria-label="Страница третья">3</a>
       </li>
       <li>
-        <a href="#" aria-label="Страница следующая">Следующая</a>
+        <a class="button" href="#" aria-label="Страница следующая">Следующая</a>
       </li>
     </ul>
   </section>
-  <section>
-    <h2>Пара слов о перфораторах</h2>
+  <section class="section-about-catalog">
+    <h2 class="title">Пара слов о перфораторах</h2>
     <p>
       Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
       бетоне и камне.
@@ -307,16 +379,16 @@
   </section>
 </main>
 <footer>
-  <section>
+  <section class="section-footer-nav">
     <h2 class="visually-hidden">Навигация для пользователя внизу сайта</h2>
-    <a href="#">
-      <img src="img/footer/logo-tehno-footer.svg" alt="Логотип Техномарт" width="220" height="68">
+    <a class="logo" href="#">
+      <img src="img/header/logo_tehnomart.svg" alt="Логотип Техномарт" width="136" height="21">
     </a>
-    <address>
-      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+    <address class="address-footer">
+      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+      <a href="tel:+78125550555">+7(812)-555-05-55</a>
     </address>
-    <a href="tel:+78125550555">+7(812)-555-05-55</a>
-    <ul class="reset-list">
+    <ul class="footer-nav reset-list">
       <li>
         <a href="#">Компания</a>
       </li>
@@ -333,7 +405,7 @@
         <a href="#">Контакты</a>
       </li>
     </ul>
-    <ul>
+    <ul class="footer-nav footer-nav--popular reset-list">
       <li>
         <a href="#">Материалы</a>
       </li>
@@ -348,9 +420,9 @@
       </li>
     </ul>
   </section>
-  <section>
+  <section class="section-footer-feedback">
     <h2 class="visually-hidden">Секция обратной связи</h2>
-    <p>
+    <p class="feedback-paragraph">
       © 2010–2019 Компания «Техномарт»
       Все права защищены
     </p>
@@ -371,39 +443,41 @@
         </a>
       </li>
     </ul>
-    <p>
+    <p class="feedback-paragraph">
       Обратная связь:
       <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
     </p>
-    <p>
+    <p class="feedback-paragraph">
       Разработано —
-      <a href="">htmlacademy.ru</a>
+      <a href="#">htmlacademy.ru</a>
     </p>
   </section>
 </footer>
-<section>
+<section class="section-wright-us">
   <h2 class="visually-hidden">Напишите нам</h2>
   <form action="https://echo.htmlacademy.ru" method="post">
-    <label>
+    <label class="lable">
       Ваше имя:
-      <input type="text" name="name" value="Имя Фамилия">
+      <input class="input-text" type="text" name="name" value="Имя Фамилия">
     </label>
-    <label>
+    <label class="lable">
       Ваш e-mail:
-      <input type="email" name="email" value="email@example.com">
+      <input class="input-text" type="email" name="email" value="email@example.com">
     </label>
-    <label>
+    <label class="lable">
       Текст письма
-      <textarea name="letter" placeholder="В свободной форме"></textarea>
+      <textarea class="input-text" name="letter" placeholder="В свободной форме"></textarea>
     </label>
-    <button type="submit">Отравить</button>
+    <div class="background">
+      <button class="button" type="submit">Отравить</button>
+    </div>
   </form>
-  <button type="button" aria-label="Закрыть">Закрыть</button>
+  <button class="button" type="button" aria-label="Закрыть">Закрыть</button>
 </section>
-<section>
+<section class="section-map">
   <h2 class="visually-hidden">Карта</h2>
   <img src="img/footer/map.png" width="970" height="477" alt=" Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-  <button type="button" aria-label="Закрыть">Закрыть</button>
+  <button class="button" type="button" aria-label="Закрыть">Закрыть</button>
 </section>
 </body>
 </html>

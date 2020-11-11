@@ -40,11 +40,18 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--black);
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.fieldset-border--reset {
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -79,6 +86,14 @@ img {
   outline: none;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--red-hover);
+}
+
+.button:active {
+  background-color: var(--red-dark-clik);
 }
 
 /*Header*/
@@ -162,6 +177,12 @@ img {
   background-color: var(--white);
 }
 
+.personal-links a {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--indigo);
+}
+
 .personal-area a:hover {
   color: var(--red);
 }
@@ -229,7 +250,7 @@ img {
   color: var(--white);
 }
 
-.popular-categories-gallery h3{
+.popular-categories-gallery h3 {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
@@ -257,7 +278,7 @@ img {
 }
 
 .slider-buttons {
-  position:absolute;
+  position: absolute;
   top: 40px;
   left: 10px;
   display: flex;
@@ -314,6 +335,10 @@ img {
 .card p {
   text-decoration: line-through;
   color: var(--gray-clik);
+}
+
+.section-hover-card {
+  font-family: 'Cuprum', sans-serif;
 }
 
 .services-title {
@@ -377,6 +402,37 @@ img {
   width: 181px;
 }
 
+/*Catalog*/
+
+.subtitle-catalog,
+.subtitle-catalog a {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.legend-subtitle {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.label-subtitle {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.section-about-catalog {
+  background-color: var(--gray-background);
+}
+
 /*Footer*/
 
 .section-footer-nav {
@@ -392,13 +448,13 @@ img {
 }
 
 .footer-nav,
-.footer-nav a{
+.footer-nav a {
   font-size: 18px;
   line-height: 24px;
   color: var(--white);
 }
 
-.footer-nav--popular a{
+.footer-nav--popular a {
   color: var(--yellow);
 }
 
