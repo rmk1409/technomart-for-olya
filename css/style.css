@@ -3,6 +3,7 @@
   --indigo: #32425C;
   --indigo-dark: #293449;
   --indigo-supper-dark: #212A3A;
+  --indigo-dark-clik: #161D29;
   --indigo-dark-border: #293449;
   --indigo-light-border: #405069;
   --white: #FFFFFF;
@@ -22,6 +23,7 @@
   --green: #63A63E;
   --green-hover: #5FBB2D;
   --green-clik: #518534;
+  --green-border: #367315;
   --light-green: #8ED78F;
   --crem: #f9f5f0;
 }
@@ -106,6 +108,27 @@ img {
   background-color: var(--indigo);
 }
 
+.nav-marker:active,
+.nav-basket:active {
+  background-color: var(--indigo-dark-clik);
+}
+
+.nav-checkout {
+  background-color: var(--green);
+}
+
+.nav-checkout:hover {
+  background-color: var(--green-hover);
+}
+
+.nav-basket--active {
+  background-color: var(--red);
+}
+
+.nav-basket--active:hover {
+  background-color: var(--red-hover);
+}
+
 .nav-user a {
   color: var(--white);
 }
@@ -133,9 +156,10 @@ img {
   max-width: 220px;
   background-color: var(--red);
   border-bottom: 5px solid var(--red-dark);
+  text-align: center;
 }
 
-.logo-header:active {
+.logo--header:active {
   background-color: var(--red-clik);
   border-bottom: 5px solid var(--red-dark-clik);
 }
@@ -183,12 +207,28 @@ img {
   color: var(--indigo);
 }
 
+.personal-links a:hover{
+  color: var(--red);
+}
+
+.personal-links a:active{
+  color: var(--gray);
+}
+
 .personal-area a:hover {
   color: var(--red);
 }
 
 .personal-area a:active {
   color: var(--gray-clik);
+}
+
+.personal-section a:hover {
+  color: var(--black);
+}
+
+.personal-section a:active {
+  color: var(--gray);
 }
 
 .nav-website a {
@@ -226,12 +266,20 @@ img {
   align-items: center;
 }
 
-.popular-categories a {
+.button--popular-categories {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--white);
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.button--popular-categories:hover {
+  background-color: rgba(197, 197, 197, 0.3);
+}
+
+.button--popular-categories:active{
+  background-color: rgba(169, 169, 169, 0.3);
 }
 
 .popular-categories--tool {
@@ -324,6 +372,18 @@ img {
   line-height: 18px;
   border: 1px solid var(--gray);
   text-align: center;
+  background-color: var(--white);
+}
+
+.card:hover {
+  border: none;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+.card:active {
+  border: none;
+  opacity: 0.5;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
 
 .card h3 {
@@ -339,6 +399,38 @@ img {
 
 .section-hover-card {
   font-family: 'Cuprum', sans-serif;
+}
+
+.button--buy {
+  background-color: var(--green);
+  border-bottom: 3px solid var(--green-border);
+  border-radius: 2px;
+}
+
+.button--buy:hover {
+  background-color: var(--green-hover);
+}
+
+.button--buy:active {
+  background-color: var(--green-clik);
+}
+
+.button--marker {
+  color: var(--indigo);
+  background-color: var(--white);
+  border: 3px solid var(--green);
+  border-radius: 2px;
+}
+
+.button--marker:hover {
+  background-color: var(--white);
+  border: 3px solid var(--indigo);
+}
+
+.button--marker:active {
+  color: var(--gray-clik);
+  background-color: var(--white);
+  border: 3px solid var(--gray-clik);
 }
 
 .services-title {
@@ -369,6 +461,11 @@ img {
 .button--services-active:hover {
   color: var(--white);
   background-color: var(--indigo-dark);
+}
+
+.button--services:active,
+.button--services-active {
+  background-color: var(--indigo);
 }
 
 .button--services-active {
@@ -433,6 +530,31 @@ img {
   background-color: var(--gray-background);
 }
 
+.button--gray {
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--gray-hover);
+  border-radius: 2px;
+}
+
+.button--gray:hover {
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--gray-clik);
+}
+
+.button--gray:active {
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--red);
+}
+
+.button--gray-active {
+  color: var(--white);
+  background-color: var(--red);
+  border: 1px solid var(--red);
+}
+
 /*Footer*/
 
 .section-footer-nav {
@@ -452,6 +574,15 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: var(--white);
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav a:active {
+  opacity: 0.5;
+  text-decoration: none;
 }
 
 .footer-nav--popular a {
@@ -474,7 +605,30 @@ img {
   color: var(--yellow);
 }
 
-/*Section Wright us*/
+.feedback-paragraph a:hover {
+ text-decoration: underline;
+}
+
+.feedback-paragraph a:active{
+  color: var(--red);
+  text-decoration: none;
+}
+
+.social-link {
+  display: flex;
+  background-color: var(--indigo-supper-dark);
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.social-link:hover {
+  background-color: var(--red);
+}
+
+  /*Section Wright us*/
 
 .section-wright-us {
   display: block;
