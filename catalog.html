@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>Каталог интернет-магазина строительных материалов и инструментов для ремонта</title>
@@ -10,35 +10,33 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="page-body">
 <header>
   <div class="nav">
-    <section>
-      <h2 class="nav-user visually-hidden">Навигация для пользователя</h2>
-      <ul class="nav-user reset-list">
-        <li>
-          <a class="logo logo--header" href="#">
-            <img src="img/header/logo_tehnomart.svg" alt="Логотип Техномарт" width="108" height="18">
-          </a>
-        </li>
-        <li>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="search">Поиск</label>
-            <input type="text" name="search" value="Поиск" id="search">
-          </form>
-        </li>
-        <li>
-          <a class="nav-marker" href="#">Закладки</a>
-        </li>
-        <li>
-          <a class="nav-basket nav-basket--active" href="#">Корзина:10</a>
-        </li>
-        <li>
-          <a class="nav-checkout" href="#">Оформить заказ</a>
-        </li>
-      </ul>
+    <section class="nav-user nav-user-section">
+      <h2 class="visually-hidden">Навигация для пользователя</h2>
+      <div class="container">
+        <a class="logo logo--header" href="#">
+          <img src="img/header/logo_tehnomart.svg" alt="Логотип Техномарт" width="108" height="18">
+        </a>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="search">Поиск</label>
+          <input type="text" name="search" value="Поиск" id="search">
+        </form>
+        <ul class="nav-user-list reset-list">
+          <li>
+            <a class="nav-marker" href="#">Закладки</a>
+          </li>
+          <li>
+            <a class="nav-basket nav-basket--active" href="#">Корзина:10</a>
+          </li>
+          <li>
+            <a class="nav-checkout" href="#">Оформить заказ</a>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section>
+    <section class="container">
       <h2 class="visually-hidden">Навигация для пользователя с адресом и телефоном</h2>
       <p class="nav-paragraph">
         Интернет-магазин
@@ -50,7 +48,7 @@
       <section>
         <h2 class="visually-hidden">Личный кабинет</h2>
         <section class="personal-area personal-section">
-            <a href="#">Равшан Джамшутович</a>
+          <a href="#">Равшан Джамшутович</a>
         </section>
         <ul class="personal-links reset-list">
           <li>
@@ -62,35 +60,37 @@
         </ul>
       </section>
     </section>
-    <nav>
-      <ul class="nav-website reset-list">
-        <li>
-          <a href="index.html">Главная</a>
-        </li>
-        <li>
-          <a href="#">Компания</a>
-        </li>
-        <li>
-          <a href="#">Каталог</a>
-        </li>
-        <li>
-          <a href="#">Новости</a>
-        </li>
-        <li>
-          <a href="#">Спецпредложения</a>
-        </li>
-        <li>
-          <a href="#">Доставка</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav>
+        <ul class="nav-website reset-list">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="#">Компания</a>
+          </li>
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="#">Спецпредложения</a>
+          </li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
 <main>
-  <section>
+  <section class="container">
     <h1 class="visually-hidden">Страница каталога интернет-магазина</h1>
     <ul class="bread-crumbs subtitle-catalog reset-list">
       <li>
@@ -107,17 +107,17 @@
       </li>
     </ul>
   </section>
-  <section>
+  <section class="container">
     <div class="popular-group">
       <h2 class="title">Перфораторы</h2>
     </div>
   </section>
-  <section>
+  <section class="container">
     <h2 class="subtitle-catalog">Фильтр:</h2>
     <section>
       <h3 class="subtitle-catalog">Сортировка</h3>
       <ul class="subtitle-catalog reset-list">
-        <li>
+        <li class="subtitle-catalog--active">
           <a href="#">По цене</a>
         </li>
         <li>
@@ -208,8 +208,8 @@
       <button class="button button--gray">Показать</button>
     </form>
   </section>
-  <section>
-    <h2>Секция карточек товара</h2>
+  <section class="container">
+    <h2 class="visually-hidden">Секция карточек товара</h2>
     <ul class="reset-list">
       <li>
         <article class="card">
@@ -345,7 +345,7 @@
       </li>
     </ul>
   </section>
-  <section>
+  <section class="container">
     <h2 class="visually-hidden">Пагинация</h2>
     <ul class="reset-list">
       <li>
@@ -363,90 +363,96 @@
     </ul>
   </section>
   <section class="section-about-catalog">
-    <h2 class="title">Пара слов о перфораторах</h2>
-    <p>
-      Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
-      бетоне и камне.
-      Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
-      шуруповерта и отбойного молотка.
-      В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная
-      дрель.
-    </p>
+    <div class="container">
+      <h2 class="title">Пара слов о перфораторах</h2>
+      <p>
+        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
+        бетоне и камне.
+        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+        шуруповерта и отбойного молотка.
+        В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная
+        дрель.
+      </p>
+    </div>
   </section>
 </main>
 <footer>
   <section class="section-footer-nav">
-    <h2 class="visually-hidden">Навигация для пользователя внизу сайта</h2>
-    <a class="logo" href="#">
-      <img src="img/header/logo_tehnomart.svg" alt="Логотип Техномарт" width="136" height="21">
-    </a>
-    <address class="address-footer">
-      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-      <a href="tel:+78125550555">+7(812)-555-05-55</a>
-    </address>
-    <ul class="footer-nav reset-list">
-      <li>
-        <a href="#">Компания</a>
-      </li>
-      <li>
-        <a href="#">Новости</a>
-      </li>
-      <li>
-        <a href="#">Каталог</a>
-      </li>
-      <li>
-        <a href="#">Доставка</a>
-      </li>
-      <li>
-        <a href="#">Контакты</a>
-      </li>
-    </ul>
-    <ul class="footer-nav footer-nav--popular reset-list">
-      <li>
-        <a href="#">Материалы</a>
-      </li>
-      <li>
-        <a href="#">Техника</a>
-      </li>
-      <li>
-        <a href="#">Инструмент</a>
-      </li>
-      <li>
-        <a href="#">Спецпредложения</a>
-      </li>
-    </ul>
+    <div class="container">
+      <h2 class="visually-hidden">Навигация для пользователя внизу сайта</h2>
+      <a class="logo" href="#">
+        <img src="img/header/logo_tehnomart.svg" alt="Логотип Техномарт" width="136" height="21">
+      </a>
+      <address class="address-footer">
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+        <a href="tel:+78125550555">+7(812)-555-05-55</a>
+      </address>
+      <ul class="footer-nav reset-list">
+        <li>
+          <a href="#">Компания</a>
+        </li>
+        <li>
+          <a href="#">Новости</a>
+        </li>
+        <li>
+          <a href="#">Каталог</a>
+        </li>
+        <li>
+          <a href="#">Доставка</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="footer-nav footer-nav--popular reset-list">
+        <li>
+          <a href="#">Материалы</a>
+        </li>
+        <li>
+          <a href="#">Техника</a>
+        </li>
+        <li>
+          <a href="#">Инструмент</a>
+        </li>
+        <li>
+          <a href="#">Спецпредложения</a>
+        </li>
+      </ul>
+    </div>
   </section>
   <section class="section-footer-feedback">
-    <h2 class="visually-hidden">Секция обратной связи</h2>
-    <p class="feedback-paragraph">
-      © 2010–2019 Компания «Техномарт»
-      Все права защищены
-    </p>
-    <ul class="reset-list">
-      <li>
-        <a href="#">
-          <img src="img/footer/logo-vk.svg" alt="Вконтакте">
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="img/footer/logo-fb.svg" alt="Фейсбук">
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="img/footer/logo-inst.svg" alt="Инстаграм">
-        </a>
-      </li>
-    </ul>
-    <p class="feedback-paragraph">
-      Обратная связь:
-      <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-    </p>
-    <p class="feedback-paragraph">
-      Разработано —
-      <a href="#">htmlacademy.ru</a>
-    </p>
+    <div class="container">
+      <h2 class="visually-hidden">Секция обратной связи</h2>
+      <p class="feedback-paragraph">
+        © 2010–2019 Компания «Техномарт»
+        Все права защищены
+      </p>
+      <ul class="reset-list">
+        <li>
+          <a class="social-link" href="#">
+            <img src="img/footer/logo-vk.svg" alt="Вконтакте">
+          </a>
+        </li>
+        <li>
+          <a class="social-link" href="#">
+            <img src="img/footer/logo-fb.svg" alt="Фейсбук">
+          </a>
+        </li>
+        <li>
+          <a class="social-link" href="#">
+            <img src="img/footer/logo-inst.svg" alt="Инстаграм">
+          </a>
+        </li>
+      </ul>
+      <p class="feedback-paragraph">
+        Обратная связь:
+        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </p>
+      <p class="feedback-paragraph">
+        Разработано —
+        <a href="#">htmlacademy.ru</a>
+      </p>
+    </div>
   </section>
 </footer>
 <section class="section-wright-us">
@@ -477,4 +483,3 @@
 </section>
 </body>
 </html>
-

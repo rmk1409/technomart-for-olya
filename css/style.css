@@ -98,6 +98,25 @@ img {
   background-color: var(--red-dark-clik);
 }
 
+/*Grid*/
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 /*Header*/
 
 .nav-user {
@@ -106,6 +125,11 @@ img {
   line-height: 24px;
   color: var(--white);
   background-color: var(--indigo);
+}
+
+.nav-user .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-marker:active,
@@ -164,6 +188,16 @@ img {
   border-bottom: 5px solid var(--red-dark-clik);
 }
 
+.nav-user-list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+.nav-user-section {
+  margin-bottom: 70px;
+}
+
 .nav {
   background-color: var(--gray-background);
 }
@@ -207,11 +241,11 @@ img {
   color: var(--indigo);
 }
 
-.personal-links a:hover{
+.personal-links a:hover {
   color: var(--red);
 }
 
-.personal-links a:active{
+.personal-links a:active {
   color: var(--gray);
 }
 
@@ -278,7 +312,7 @@ img {
   background-color: rgba(197, 197, 197, 0.3);
 }
 
-.button--popular-categories:active{
+.button--popular-categories:active {
   background-color: rgba(169, 169, 169, 0.3);
 }
 
@@ -503,9 +537,35 @@ img {
 
 .subtitle-catalog,
 .subtitle-catalog a {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: normal;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.subtitle-catalog a {
+  color: var(--gray);
+  text-decoration: underline;
+  text-decoration-color: var(--red);
+  text-decoration-style: dotted;
+}
+
+.subtitle-catalog a:hover {
+  color: var(--black);
+  text-decoration: underline;
+  text-decoration-color: var(--red);
+  text-decoration-style: solid;
+}
+
+.subtitle-catalog a:active,
+.subtitle-catalog--active a{
+  color: var(--red);
+  text-decoration: none;
+}
+
+.subtitle-catalog {
+  background-color: var(--crem);
 }
 
 .legend-subtitle {
@@ -606,10 +666,10 @@ img {
 }
 
 .feedback-paragraph a:hover {
- text-decoration: underline;
+  text-decoration: underline;
 }
 
-.feedback-paragraph a:active{
+.feedback-paragraph a:active {
   color: var(--red);
   text-decoration: none;
 }
@@ -628,7 +688,7 @@ img {
   background-color: var(--red);
 }
 
-  /*Section Wright us*/
+/*Section Wright us*/
 
 .section-wright-us {
   display: block;
