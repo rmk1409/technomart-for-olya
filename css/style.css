@@ -132,6 +132,31 @@ img {
   justify-content: space-between;
 }
 
+.nav-contact .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personal-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.personal-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .nav-marker:active,
 .nav-basket:active {
   background-color: var(--indigo-dark-clik);
@@ -265,7 +290,7 @@ img {
   color: var(--gray);
 }
 
-.nav-website a {
+.nav-website-links a {
   font-size: 18px;
   line-height: 24px;
   color: var(--white);
@@ -273,17 +298,22 @@ img {
   border-bottom: 5px solid var(--indigo-dark);
 }
 
-.nav-website a:hover {
+.nav-website-links a:hover {
   background-color: var(--indigo-dark);
 }
 
-.nav-website a:active {
+.nav-website-links a:active {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/*Main popular-categories*/
+.nav-website-links {
+  display: flex;
+  justify-content: space-between;
+}
 
-.popular-categories {
+/*Main popular-categorys*/
+
+.popular-category {
   display: block;
   padding: 30px 20px;
   max-width: 300px;
@@ -291,7 +321,7 @@ img {
   background-color: var(--yellow);
 }
 
-.popular-categories h3 {
+.popular-category h3 {
   padding: 0;
   margin: 0;
   font-weight: bold;
@@ -300,7 +330,7 @@ img {
   align-items: center;
 }
 
-.button--popular-categories {
+.button--popular-category {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -308,31 +338,31 @@ img {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.button--popular-categories:hover {
+.button--popular-category:hover {
   background-color: rgba(197, 197, 197, 0.3);
 }
 
-.button--popular-categories:active {
+.button--popular-category:active {
   background-color: rgba(169, 169, 169, 0.3);
 }
 
-.popular-categories--tool {
+.popular-category--tool {
   background-color: var(--blue);
 }
 
-.popular-categories--technique {
+.popular-category--technique {
   background-color: var(--lilac);
 }
 
-.popular-categories--discount {
+.popular-category--discount {
   background-color: var(--light-green);
 }
 
-.popular-categories-gallery {
+.popular-category-gallery {
   color: var(--white);
 }
 
-.popular-categories-gallery h3 {
+.popular-category-gallery h3 {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
@@ -340,14 +370,14 @@ img {
   color: var(--white);
 }
 
-.popular-categories-gallery--perforators {
+.popular-category-gallery--perforators {
   width: 620px;
   height: 266px;
   background-image: url("../img/index/perforators-img.jpg");
   background-repeat: no-repeat;
 }
 
-.popular-categories-gallery--drills {
+.popular-category-gallery--drills {
   display: none;
   width: 620px;
   height: 266px;
@@ -379,6 +409,17 @@ img {
 
 .slider-button--right {
   background-image: url("../img/index/icon-right.svg");
+}
+
+.popular-categories .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.section-gallery {
+  grid-area: 2 / 1 / 4 / 3;
 }
 
 .popular-group {
