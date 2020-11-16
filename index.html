@@ -146,7 +146,7 @@
       <h2 class="title">Популярные товары:</h2>
       <button class="button">Все популярные товары</button>
     </div>
-    <ul class="reset-list">
+    <ul class="cars-grid reset-list">
       <li>
         <article class="card">
           <img alt="Карточка товара Перфоратора BOSCH BFG 9000" src="img/index/BOSCHBFG9000.png" width="184"
@@ -245,7 +245,7 @@
       <h2 class="title">Популярные производители:</h2>
       <button class="button">Все производители</button>
     </div>
-    <ul class="reset-list">
+    <ul class="cars-grid reset-list">
       <li class="card">
         <a href="#">
           <img alt="Ссылка на сайт производителя Bosh" src="img/index/manufacturer-bosch.png" width="126" height="37">
@@ -300,51 +300,53 @@
         Хороший интернет-магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
-      <ul class="reset-list">
-        <li>
-          <button class="button button--services button--services-active">Доставка</button>
-        </li>
-        <li>
-          <button class="button button--services">Гарантия</button>
-        </li>
-        <li>
-          <button class="button button--services">Кредит</button>
-        </li>
-      </ul>
-      <ul class="reset-list">
-        <li class="service-delivery">
-          <h3 class="title services-title">Доставка</h3>
-          <p class="services-paragraph">
-            Мы с удовольствием доставим ваш товар прямо <br>
-            к вашему подъезду совершенно бесплатно!<br>
-            Ведь мы неплохо заработаем,<br>
-            поднимая его на ваш этаж!
-          </p>
-        </li>
-        <li class="service-guarantee">
-          <h3 class="title services-title">Гарантия</h3>
-          <p class="services-paragraph">
-            Если купленный у нас товар поломается или заискрит,<br>
-            а также в случае пожара, спровоцированного его <br>
-            возгоранием, вы всегда можете быть уверены в нашей <br>
-            гарантии. Мы обменяем сгоревший товар на новый.<br>
-            Дом уж восстановите как-нибудь сами.
-          </p>
-        </li>
-        <li class="service-credit">
-          <h3 class="title services-title">Кредит</h3>
-          <p class="services-paragraph">
-            Залезть в долговую яму стало проще! <br>
-            Кредитные консультанты придут вам на помощь.
-          </p>
-          <a class="button" href="#">Оформить</a>
-        </li>
-      </ul>
+      <div class="services-grid">
+        <ul class="button-services-group reset-list">
+          <li>
+            <button class="button button--services button--services-active">Доставка</button>
+          </li>
+          <li>
+            <button class="button button--services">Гарантия</button>
+          </li>
+          <li>
+            <button class="button button--services">Кредит</button>
+          </li>
+        </ul>
+        <ul class="reset-list">
+          <li class="service-delivery">
+            <h3 class="title services-title">Доставка</h3>
+            <p class="services-paragraph">
+              Мы с удовольствием доставим ваш товар прямо <br>
+              к вашему подъезду совершенно бесплатно!<br>
+              Ведь мы неплохо заработаем,<br>
+              поднимая его на ваш этаж!
+            </p>
+          </li>
+          <li class="service-guarantee">
+            <h3 class="title services-title">Гарантия</h3>
+            <p class="services-paragraph">
+              Если купленный у нас товар поломается или заискрит,<br>
+              а также в случае пожара, спровоцированного его <br>
+              возгоранием, вы всегда можете быть уверены в нашей <br>
+              гарантии. Мы обменяем сгоревший товар на новый.<br>
+              Дом уж восстановите как-нибудь сами.
+            </p>
+          </li>
+          <li class="service-credit">
+            <h3 class="title services-title">Кредит</h3>
+            <p class="services-paragraph">
+              Залезть в долговую яму стало проще! <br>
+              Кредитные консультанты придут вам на помощь.
+            </p>
+            <a class="button" href="#">Оформить</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
-  <section class="container">
+  <section class="about-us-section container">
     <h2 class="visually-hidden">О нас</h2>
-    <section>
+    <section class="company-section">
       <h3 class="title">Компания "Техномарт"</h3>
       <p class="about-us-paragraph">
         Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
@@ -360,9 +362,9 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
+      <button class="button">Подробнее о компании</button>
     </section>
-    <button class="button">Подробнее о компании</button>
-    <section>
+    <section class="contact-section">
       <h2 class="title">Контакты</h2>
       <p class="contact-paragraph">
         Вы можете забрать товар сами,
@@ -380,10 +382,6 @@
       <a class="logo" href="#">
         <img src="img/header/logo_tehnomart.svg" alt="Логотип Техномарт" width="136" height="21">
       </a>
-      <address class="address-footer">
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-        <a href="tel:+78125550555">+7(812)-555-05-55</a>
-      </address>
       <ul class="footer-nav reset-list">
         <li>
           <a href="#">Компания</a>
@@ -401,6 +399,10 @@
           <a href="#">Контакты</a>
         </li>
       </ul>
+      <address class="address-footer">
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+        <a href="tel:+78125550555">+7(812)-555-05-55</a>
+      </address>
       <ul class="footer-nav footer-nav--popular reset-list">
         <li>
           <a href="#">Материалы</a>
@@ -424,7 +426,7 @@
         © 2010–2019 Компания «Техномарт»
         Все права защищены
       </p>
-      <ul class="reset-list">
+      <ul class="social-links reset-list">
         <li>
           <a class="social-link" href="#">
             <img src="img/footer/logo-vk.svg" alt="Вконтакте">
@@ -454,21 +456,21 @@
 </footer>
 <section class="section-wright-us">
   <h2 class="visually-hidden">Напишите нам</h2>
-  <form action="https://echo.htmlacademy.ru" method="post">
-    <label class="lable">
+  <form class="form-grid" action="https://echo.htmlacademy.ru" method="post">
+    <label class="label">
       Ваше имя:
       <input class="input-text" type="text" name="name" value="Имя Фамилия">
     </label>
-    <label class="lable">
+    <label class="label">
       Ваш e-mail:
       <input class="input-text" type="email" name="email" value="email@example.com">
     </label>
-    <label class="lable">
+    <label class="label label-textarea">
       Текст письма
       <textarea class="input-text" name="letter" placeholder="В свободной форме"></textarea>
     </label>
     <div class="background">
-      <button class="button" type="submit">Отравить</button>
+      <button class="button button--form" type="submit">Отравить</button>
     </div>
   </form>
   <button class="button" type="button" aria-label="Закрыть">Закрыть</button>
