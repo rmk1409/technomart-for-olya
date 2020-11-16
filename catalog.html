@@ -19,7 +19,7 @@
         <a class="logo logo--header" href="#">
           <img src="img/header/logo_tehnomart.svg" alt="Логотип Техномарт" width="108" height="18">
         </a>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="search" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search">Поиск</label>
           <input type="text" name="search" value="Поиск" id="search">
         </form>
@@ -459,31 +459,19 @@
     </div>
   </section>
 </footer>
-<section class="section-wright-us">
-  <h2 class="visually-hidden">Напишите нам</h2>
-  <form class="form-grid" action="https://echo.htmlacademy.ru" method="post">
-    <label class="label">
-      Ваше имя:
-      <input class="input-text" type="text" name="name" value="Имя Фамилия">
-    </label>
-    <label class="label">
-      Ваш e-mail:
-      <input class="input-text" type="email" name="email" value="email@example.com">
-    </label>
-    <label class="label label-textarea">
-      Текст письма
-      <textarea class="input-text" name="letter" placeholder="В свободной форме"></textarea>
-    </label>
-    <div class="background">
-      <button class="button button--form" type="submit">Отравить</button>
-    </div>
-  </form>
-  <button class="button" type="button" aria-label="Закрыть">Закрыть</button>
-</section>
-<section class="section-map">
-  <h2 class="visually-hidden">Карта</h2>
-  <img src="img/footer/map.png" width="970" height="477" alt=" Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-  <button class="button" type="button" aria-label="Закрыть">Закрыть</button>
+<section class="section-add-to-card">
+  <h2>Товар добавлен в корзину!</h2>
+  <div class="background">
+    <ul class="button-group reset-list">
+      <li>
+        <button class="button">Оформить заказ</button>
+      </li>
+      <li>
+        <button class="button button--continue-shopping">Продолжить покупки</button>
+      </li>
+    </ul>
+  </div>
+  <button class="button">Закрыть</button>
 </section>
 </body>
 </html>
