@@ -352,13 +352,13 @@
   <section class="about-us-section container">
     <h2 class="visually-hidden">О нас</h2>
     <section class="company-section">
-      <h3 class="title">Компания "Техномарт"</h3>
-      <p class="about-us-paragraph">
+      <h3 class="title">Компания «Техномарт»</h3>
+      <p class="about-us-paragraph about-us-paragraph--first">
         Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
         ремонта и строительства не оставит равнодушными любителей сэкономить на
         гастарбайтерах.
       </p>
-      <p class="about-us-paragraph">
+      <p class="about-us-paragraph about-us-paragraph--second">
         Мы можем доставить ваш товар в самые отдаленные точки России!
         Техномарт работает со многими транспортными компаниями:
       </p>
@@ -367,7 +367,7 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <button class="button">Подробнее о компании</button>
+      <button class="button button--about-us">Подробнее о компании</button>
     </section>
     <section class="contact-section">
       <h2 class="title">Контакты</h2>
@@ -375,8 +375,8 @@
         Вы можете забрать товар сами,
         заехав в наш офис:
       </p>
-      <img src="img/index/map.png" alt="Картинка карты" width="300" height="158">
-      <button class="button">Заблудились? Напишите нам!</button>
+      <img class="map" src="img/index/map.png" alt="Картинка карты" width="300" height="158">
+      <button class="button button--wright-us">Заблудились? Напишите нам!</button>
     </section>
   </section>
 </main>
@@ -384,7 +384,7 @@
   <section class="section-footer-nav">
     <div class="container">
       <h2 class="visually-hidden">Навигация для пользователя внизу сайта</h2>
-      <a class="logo" href="#">
+      <a class="logo logo-footer" href="#">
         <img src="img/header/logo_tehnomart.svg" alt="Логотип Техномарт" width="136" height="21">
       </a>
       <ul class="footer-nav reset-list">
@@ -406,7 +406,7 @@
       </ul>
       <address class="address-footer">
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-        <a href="tel:+78125550555">+7(812)-555-05-55</a>
+        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
       </address>
       <ul class="footer-nav footer-nav--popular reset-list">
         <li>
@@ -428,7 +428,7 @@
     <div class="container">
       <h2 class="visually-hidden">Секция обратной связи</h2>
       <p class="feedback-paragraph">
-        © 2010–2019 Компания «Техномарт»
+        © 2010–2019 Компания «Техномарт»<br>
         Все права защищены
       </p>
       <ul class="social-links reset-list">
@@ -448,18 +448,20 @@
           </a>
         </li>
       </ul>
-      <p class="feedback-paragraph">
-        Обратная связь:
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </p>
-      <p class="feedback-paragraph">
-        Разработано —
-        <a href="#">htmlacademy.ru</a>
-      </p>
+      <section class="feedback">
+        <p class="feedback-paragraph">
+          Обратная связь:
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+        <p class="feedback-paragraph">
+          Разработано —<br>
+          <a href="#">htmlacademy.ru</a>
+        </p>
+      </section>
     </div>
   </section>
 </footer>
-<section class="section-wright-us">
+<section class="section-wright-us visually-hidden">
   <h2 class="visually-hidden">Напишите нам</h2>
   <form class="form-grid" action="https://echo.htmlacademy.ru" method="post">
     <label class="label">
@@ -480,7 +482,7 @@
   </form>
   <button class="button" type="button" aria-label="Закрыть">Закрыть</button>
 </section>
-<section class="section-map">
+<section class="section-map visually-hidden">
   <h2 class="visually-hidden">Карта</h2>
   <img src="img/footer/map.png" width="970" height="477" alt=" Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
   <button class="button" type="button" aria-label="Закрыть">Закрыть</button>

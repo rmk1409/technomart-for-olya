@@ -128,9 +128,21 @@ img {
 }
 
 .search {
+  position: relative;
   display: flex;
   align-self: center;
   padding-left: 30px;
+}
+
+.search::before {
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-image: url(../img/header/icon-search.svg);
+  opacity: 0.3;
 }
 
 .nav-user .container {
@@ -171,6 +183,39 @@ img {
 .nav-marker:active,
 .nav-basket:active {
   background-color: var(--indigo-dark-clik);
+}
+
+.nav-marker,
+.nav-basket  {
+  position: relative;
+}
+
+.nav-marker::before {
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  content: "";
+  width: 14px;
+  height: 16px;
+  background-image: url(../img/header/icon-bookmark.svg);
+  opacity: 0.3;
+}
+
+.nav-basket::before {
+  position: absolute;
+  top: 13px;
+  left: 22px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/header/icon-cart.svg);
+  opacity: 0.3;
+}
+
+.nav-marker:hover::before,
+.nav-basket:hover::before,
+.search:hover::before {
+  opacity: 1;
 }
 
 .nav-checkout {
@@ -264,6 +309,7 @@ img {
 }
 
 .tel-number-header {
+  position: relative;
   margin-left: -35px;
   padding: 6px 15px 4px 76px;
   align-content: center;
@@ -274,6 +320,16 @@ img {
   font-weight: bold;
   color: var(--red);
   border: 3px solid var(--white);
+}
+
+.tel-number-header::before {
+  position: absolute;
+  top: 13px;
+  left: 39px;
+  content: "";
+  width: 19px;
+  height: 19px;
+  background-image: url(../img/header/icon-phone.svg);
 }
 
 .address-header {
@@ -298,8 +354,34 @@ img {
 }
 
 .personal-area .login {
+  position: relative;
   padding: 13px 1px 13px 15px;
   margin-right: -6px;
+}
+
+.login::before {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  content: "";
+  width: 20px;
+  height: 17px;
+  background-image: url(../img/header/icon-login.svg);
+}
+
+.login:hover::before {
+  background-image: url(../img/header/icon-login-hover.svg);
+}
+
+.login:hover:active {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  content: "";
+  width: 20px;
+  height: 17px;
+  background-image: url(../img/header/icon-login.svg);
+  background-repeat: no-repeat;
 }
 
 .personal-links a {
@@ -515,6 +597,7 @@ img {
 }
 
 .title {
+  margin-bottom: 0;
   font-weight: 600;
   font-size: 29px;
   line-height: 30px;
@@ -762,13 +845,40 @@ img {
   width: 403px;
 }
 
+.about-us-paragraph--first {
+  margin-top: 24px;
+}
+
+.about-us-paragraph--second {
+  margin-top: 27px;
+  margin-bottom: 0px;
+}
+
 .transport-companies {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 35px;
+  margin-top: -3px;
+  padding-left: 37px;
+}
+
+.button--about-us {
+  margin-top: 15px;
+  width: 220px;
 }
 
 .contact-paragraph {
   width: 181px;
+  margin-top: 26px;
+}
+
+.map {
+  margin-top: 19px;
+}
+
+
+.button--wright-us {
+  margin-top: 17px;
+  width: 300px;
 }
 
 /*Catalog*/
@@ -897,18 +1007,26 @@ img {
 
 /*Footer*/
 
+.logo-footer {
+  padding: 19px 0 12px 0;
+}
+
 .section-footer-nav {
   background-color: var(--indigo);
 }
 
 .section-footer-nav .container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 384px auto;
   gap: 10px;
+  margin-top: 69px;
+  padding-bottom: 54px;
 }
 
 .address-footer,
 .address-footer a {
+  margin-top: 19px;
+  margin-left: 2px;
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
@@ -919,6 +1037,8 @@ img {
 .footer-nav a {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 19px;
   font-size: 18px;
   line-height: 24px;
   color: var(--white);
@@ -937,18 +1057,31 @@ img {
   color: var(--yellow);
 }
 
+.footer-nav--popular {
+  margin-top: 0;
+  margin-left: 22px;
+  margin-bottom: 14px;
+}
+
 .section-footer-feedback {
   background-color: var(--indigo-dark);
 }
 
 .section-footer-feedback .container {
+  display: grid;
+  grid-template-columns: 350px 258px 1fr;
+  gap: 16px;
+  padding: 33px 0px;
+}
+
+.feedback {
   display: flex;
-  justify-content: space-between;
 }
 
 .feedback-paragraph {
   margin: 0;
-  width: 228px;
+  margin-top: 3px;
+  margin-right: 13px;
   font-size: 16px;
   line-height: 18px;
   color: var(--white);
@@ -969,7 +1102,8 @@ img {
 
 .social-links {
   display: flex;
-  gap: 10px;
+  gap: 2px;
+  margin-left: 22px;
 }
 
 .social-link {
