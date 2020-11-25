@@ -189,9 +189,15 @@ img {
 
 .personal-links {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
+  margin-top: 6px;
+  margin-left: 29px;
+}
+
+.personal-links a:last-child {
+  margin-left: 26px;
 }
 
 .nav-marker:active,
@@ -200,7 +206,7 @@ img {
 }
 
 .nav-marker,
-.nav-basket  {
+.nav-basket {
   position: relative;
 }
 
@@ -458,7 +464,8 @@ img {
   margin-top: 0;
   flex-wrap: wrap;
   padding: 15px 16px 15px 16px;
- }
+}
+
 /*Main popular-categorys*/
 
 .popular-category {
@@ -606,7 +613,7 @@ img {
   width: 620px;
   height: 266px;
   background-image: url(../img/index/perforators-img.jpg);
-  background-color:  var(--gray);
+  background-color: var(--gray);
   background-repeat: no-repeat;
 }
 
@@ -706,7 +713,8 @@ img {
 .cars-grid {
   display: grid;
   grid-template-columns: 220px 220px 220px 220px;
-  gap: 18px 20px;    margin-bottom: 2px;
+  gap: 18px 20px;
+  margin-bottom: 2px;
   margin-top: 20px;
 }
 
@@ -750,7 +758,7 @@ img {
   min-height: 145px;
 }
 
-.cars-grid--manufacturers .card{
+.cars-grid--manufacturers .card {
   height: 115px;
   display: flex;
   justify-content: center;
@@ -777,7 +785,7 @@ img {
   position: relative;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   max-width: 100%;
   max-height: 100%;
   margin: auto;
@@ -1071,15 +1079,49 @@ img {
 
 /*Catalog*/
 
+.personal-section {
+  position: relative;
+  margin-left: 10px;
+}
+
+.personal-section::before {
+  position: absolute;
+  top: 2px;
+  left: 15px;
+  content: "";
+  width: 20px;
+  height: 18px;
+  background-image: url(../img/header/icon-user.svg);
+  background-repeat: no-repeat;
+}
+
+.personal-section::after {
+  position: absolute;
+  top: 2px;
+  left: 263px;
+  content: "";
+  width: 20px;
+  height: 17px;
+  background-image: url(../img/header/icon-login1.svg);
+  background-repeat: no-repeat;
+}
+
+.personal-section a {
+  width: 207px;
+  padding: 14px 46px 11px 46px;
+}
+
 .cars-grid-catalog {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 18px 10px;
+  gap: 18px 23px;
+  margin-top: 15px;
 }
 
+.bread-crumbs,
 .subtitle-catalog,
 .subtitle-catalog a,
-.subtitle-catalog h3{
+.subtitle-catalog h3 {
   font-family: 'PT Sans', sans-serif;
   font-weight: normal;
   font-size: 13px;
@@ -1090,8 +1132,29 @@ img {
 .bread-crumbs {
   display: flex;
   justify-content: start;
-  gap: 10px;
+  gap: 41px;
   flex-wrap: wrap;
+  margin-top: 81px;
+}
+
+.icon-right-small {
+  position: relative;
+}
+
+.icon-right-small::before {
+  position: absolute;
+  top: 2px;
+  left: -23px;
+  content: "";
+  width: 7px;
+  height: 11px;
+  background-image: url(../img/catalog/icon-right-small.svg);
+  background-repeat: no-repeat;
+}
+
+.popular-group--catalog {
+  margin-top: 20px;
+  background-color: var(--gray-background);
 }
 
 .subtitle-catalog a {
@@ -1109,41 +1172,61 @@ img {
 }
 
 .subtitle-catalog a:active,
-.subtitle-catalog--active a{
+.subtitle-catalog--active a {
   color: var(--red);
   text-decoration: none;
 }
 
 .subtitle-catalog {
+  margin: 0;
+  padding: 10px 18px 9px 18px;
   background-color: var(--crem);
 }
 
 .filter-group {
   display: grid;
-  grid-template-columns: 200px auto;
-  gap: 29px;
+  grid-template-columns: 220px auto;
+  gap: 21px;
+  margin-top: 20px;
 }
 
 .sorting-group {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-self: baseline;
+  padding: 0;
+  margin-left: 1px;
+  margin-top: 1px;
+}
+
+.subtitle-catalog--sorting {
+  margin: 0;
+  padding: 10px 18px 9px 18px;
 }
 
 .sorting-links {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 68px;
+  margin-left: 108px;
+}
+
+.sorting-links--up-down {
+  margin-left: 27px;
+  gap: 20px;
 }
 
 .catalog-grid {
   display: grid;
-  grid-template-columns: 220px auto;
-  gap: 30px;
+  grid-template-columns: 220px 698px;
+  gap: 21px;
+  margin-top: 13px;
 }
 
 .pagination {
   grid-column-start: 2;
   display: flex;
+  margin-top: 26px;
 }
 
 .legend-subtitle {
@@ -1165,7 +1248,19 @@ img {
 }
 
 .section-about-catalog {
+  margin-top: 58px;
+  padding: 40px 10px 55px 10px;
   background-color: var(--gray-background);
+}
+
+.section-about-catalog h2 {
+  margin-left: 1px;
+}
+
+.section-about-catalog p {
+  margin-top: 26px;
+  max-width: 831px;
+  font-size: 14px;
 }
 
 .button--gray {
@@ -1220,6 +1315,10 @@ img {
   gap: 10px;
   margin-top: 69px;
   padding-bottom: 54px;
+}
+
+.section-footer-nav--catalog .container {
+  margin-top: 0;
 }
 
 .address-footer,
