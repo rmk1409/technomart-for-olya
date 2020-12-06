@@ -312,6 +312,7 @@ img {
 
 .nav-user-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .nav-user-section {
@@ -451,6 +452,7 @@ img {
 
 .nav-website-links {
   display: flex;
+  flex-wrap: wrap;
   padding: 1px 17px;
   background-color: var(--indigo);
   border-bottom: 5px solid var(--indigo-dark);
@@ -608,7 +610,7 @@ img {
 }
 
 .popular-category-gallery--perforators {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 620px;
   height: 266px;
@@ -618,10 +620,12 @@ img {
 }
 
 .popular-category-gallery--drills {
-  display: none;
+  display: flex;
+  flex-direction: column;
   width: 620px;
   height: 266px;
   background-image: url("../img/index/dreli-img.jpg");
+  background-color: var(--gray);
   background-repeat: no-repeat;
 }
 
@@ -953,8 +957,8 @@ img {
 
 .service-guarantee:before {
   position: absolute;
-  top: 22px;
-  left: 151px;
+  top: -2px;
+  left: 238px;
   content: "";
   width: 389px;
   height: 283px;
@@ -964,8 +968,8 @@ img {
 
 .service-credit:before {
   position: absolute;
-  top: 22px;
-  left: 151px;
+  top: 0;
+  left: 166px;
   content: "";
   width: 465px;
   height: 285px;
@@ -998,8 +1002,20 @@ img {
 }
 
 .button-services-group {
+  position: relative;
   margin-top: 70px;
   margin-left: 14px;
+}
+
+.button-services-group::before {
+  position: absolute;
+  top: -50px;
+  right: -54px;
+  content: "";
+  width: 10px;
+  height: 279px;
+  background-image: url(../img/index/Object.png);
+  background-repeat: no-repeat;
 }
 
 .button--services {
@@ -1033,20 +1049,34 @@ img {
   background-color: var(--white);
 }
 
+.service-credit,
+.service-guarantee,
 .service-delivery {
   display: block;
   margin-top: 67px;
   margin-left: 54px;
 }
 
+.service-credit p,
+.service-guarantee p,
 .service-delivery p {
   margin-top: 32px;
   margin-left: 0;
+}
+.service-guarantee p {
+  margin-top: 26px;
+  width: 319px;
 }
 
 .service-guarantee,
 .service-credit {
   display: none;
+}
+
+.button-credit {
+  margin-top: 23px;
+  width: 175px;
+  border-radius: 3px;
 }
 
 .services-group {
@@ -1056,7 +1086,9 @@ img {
   background-color: var(--gray-background);
 }
 
-.services-group h2 {
+.service-credit h2,
+.service-guarantee h2,
+.service-delivery h2  {
   margin-left: 14px;
 }
 
@@ -1264,6 +1296,30 @@ img {
   margin-left: 27px;
 }
 
+.sorting-link--up:hover {
+  fill: var(--black);
+}
+
+.sorting-link--up-active {
+  fill: var(--red);
+}
+
+.sorting-link--up:active {
+  fill: var(--red);
+}
+
+.sorting-link--down:hover {
+  fill: var(--black);
+}
+
+.sorting-link--down:active {
+  fill: var(--red);
+}
+
+.sorting-link--down-active {
+  fill: var(--red);
+}
+
 .catalog-grid {
   display: grid;
   grid-template-columns: 220px 698px;
@@ -1275,6 +1331,7 @@ img {
   grid-column-start: 2;
   display: flex;
   justify-content: start;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 26px;
 }
@@ -1594,6 +1651,7 @@ margin-top: 42px;
 .footer-nav a {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 19px;
   font-size: 18px;
@@ -1615,6 +1673,8 @@ margin-top: 42px;
 }
 
 .footer-nav--popular {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 0;
   margin-left: 22px;
   margin-bottom: 14px;
@@ -1659,6 +1719,7 @@ margin-top: 42px;
 
 .social-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 2px;
   margin-left: 22px;
 }
