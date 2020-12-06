@@ -479,6 +479,15 @@ img {
   background-color: var(--yellow);
 }
 
+.popular-category-gallery {
+  display: block;
+}
+
+/*.popular-category-gallery--drills,*/
+/*.popular-category-gallery--perforators {*/
+/*  display: none;*/
+}
+
 .popular-category-material:before {
   position: absolute;
   top: 30px;
@@ -774,7 +783,7 @@ img {
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
 
-.card:active {
+.card-manufacturer:active {
   border: none;
   opacity: 0.5;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
@@ -1132,7 +1141,7 @@ img {
   content: "";
   width: 25px;
   height: 2px;
-  background-color: var(--red);;
+  background-color: var(--red);
   background-repeat: no-repeat;
 }
 
@@ -1147,12 +1156,12 @@ img {
   font-family: 'PT Sans', sans-serif;
 }
 
-.map {
+.map-link {
   margin-top: 19px;
+
 }
 
-
-.button--wright-us {
+.button--write-us {
   margin-top: 17px;
   width: 300px;
 }
@@ -1745,11 +1754,20 @@ margin-top: 42px;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  display: block;
+  display: none;
   margin: auto;
   background-color: var(--white);
   border-top: 7px solid var(--red);
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+.section-wright-us--show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.section-wright-us--error {
+  animation: shake 0.6s;
 }
 
 .form-grid {
@@ -1837,7 +1855,7 @@ margin-top: 42px;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  display: block;
+  display: none;
   margin: auto;
   width: 943px;
   height: 449px;
@@ -1848,16 +1866,26 @@ margin-top: 42px;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
 
+.section-map--show {
+  display: block;
+}
+
 .section-add-to-card {
   position: fixed;
   left: 50%;
   top: 50%;
+  display: none;
   margin: auto;
   min-width: 620px;
   transform: translate(-50%,-50%);
   border-top: 7px solid var(--red);
   background-color: var(--white);
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  z-index: 2;
+}
+
+.section-add-to-card--show {
+  display: block;
 }
 
 .section-add-to-card h2 {
@@ -1905,4 +1933,51 @@ margin-top: 42px;
 .button--continue-shopping:active {
   color: var(--black);
   background-color: var(--gray-clik);
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translate(-50%, -2000px);
+    transform: translate(-50%, -2000px);
+  }
+
+  70% {
+    -webkit-transform: translate(-50%, 30px);
+    transform: translate(-50%, 30px);
+  }
+
+  90% {
+    -webkit-transform: translate(-50%, -10px);
+    transform: translate(-50%, -10px);
+  }
+
+  100% {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate(-51%, -50%);
+    transform: translate(-51%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate( -49%, -50%);
+    transform: translate( -49%, -50%);
+  }
 }
