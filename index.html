@@ -3,25 +3,27 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин строительных материалов и инструментов для ремонта</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
-    href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Sans:wght@400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/min_style.css" rel="stylesheet">
 </head>
 <body class="page-body">
 <header>
   <div class="nav">
-    <section class=" nav-user nav-user-section">
+    <section class="nav-user">
       <h2 class="visually-hidden">Навигация для пользователя</h2>
       <div class="container">
         <a class="logo logo--header" href="#">
           <img src="img/header/logo_tehnomart.svg" alt="Логотип Техномарт" width="108" height="18">
         </a>
-        <form class="search" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="search">Поиск</label>
-          <input type="text" name="search" value="Поиск" id="search">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="search">Поиск:</label>
+          <div class="search">
+            <input type="text" name="search" placeholder="Поиск:" id="search">
+          </div>
         </form>
         <ul class="nav-user-list reset-list">
           <li>
@@ -38,8 +40,8 @@
     </section>
     <div class="nav-contact">
       <section class="container">
+        <h2 class="visually-hidden">Навигация для пользователя с адресом и телефоном</h2>
         <div class="contact-slogan">
-          <h2 class="visually-hidden">Навигация для пользователя с адресом и телефоном</h2>
           <p class="nav-paragraph">
             Интернет-магазин
             строительных материалов <br>
@@ -119,12 +121,12 @@
           <li class="popular-category-gallery popular-category-gallery--perforators">
             <h3>Перфораторы</h3>
             <p>Настоящие мужские игрушки</p>
-            <button class="button">Открыть каталог</button>
+            <a class="button" href="catalog.html">Открыть каталог</a>
           </li>
           <li class="popular-category-gallery popular-category-gallery--drills">
             <h3>Дрели</h3>
             <p>Соседям на радость</p>
-            <button class="button">Открыть каталог</button>
+            <a class="button" href="catalog.html">Открыть каталог</a>
           </li>
         </ul>
         <ul class="slider-buttons reset-list">
@@ -137,13 +139,23 @@
                     aria-label="Кнопка слайдера вперед"></button>
           </li>
         </ul>
+        <ul class="slider-buttons reset-list">
+          <li>
+            <button class="slider-circle slider-circle--1" type="button" aria-label="Первый слайд картинки"
+                    title="Первый слайд картинки"></button>
+          </li>
+          <li>
+            <button class="slider-circle slider-circle--2 slider-circle--active" type="button"
+                    aria-label="Второй слайд картинки" title="Второй слайд картинки"></button>
+          </li>
+        </ul>
       </section>
     </section>
   </div>
   <section class="container">
     <div class="popular-group">
       <h2 class="title">Популярные товары:</h2>
-      <button class="button">Все популярные товары</button>
+      <a class="button" href="#">Все популярные товары</a>
     </div>
     <ul class="cars-grid cars-grid--index reset-list">
       <li>
@@ -251,50 +263,50 @@
   <section class="container">
     <div class="popular-group popular-group--manufacturers">
       <h2 class="title">Популярные производители:</h2>
-      <button class="button">Все производители</button>
+      <a class="button" href="#">Все производители</a>
     </div>
     <ul class="cars-grid cars-grid--manufacturers reset-list">
-      <li class="card card-manufacturer">
-        <a href="#">
+      <li>
+        <a class="card card-manufacturer" href="#">
           <img alt="Ссылка на сайт производителя Bosh" src="img/index/manufacturer-bosch.png" width="126" height="37">
         </a>
       </li>
-      <li class="card card-manufacturer">
-        <a href="#">
+      <li>
+        <a class="card card-manufacturer" href="#">
           <img alt="Ссылка на сайт производителя Makita" src="img/index/manufacturer-makita.png" width="123"
                height="40">
         </a>
       </li>
-      <li class="card card-manufacturer">
-        <a href="#">
+      <li>
+        <a class="card card-manufacturer" href="#">
           <img alt="Ссылка на сайт производителя Dewalt" src="img/index/manufacturer-dewalt.png" width="146"
                height="44">
         </a>
       </li>
-      <li class="card card-manufacturer">
-        <a href="#">
+      <li>
+        <a class="card card-manufacturer" href="#">
           <img alt="Ссылка на сайт производителя Interskol" src="img/index/manufacturer-interskol.png" width="200"
                height="76">
         </a>
       </li>
-      <li class="card card-manufacturer">
-        <a href="#">
+      <li>
+        <a class="card card-manufacturer" href="#">
           <img alt="Ссылка на сайт производителя Hitachi" src="img/index/manufacturer-hitachi.png" width="169"
                height="31">
         </a>
       </li>
-      <li class="card card-manufacturer">
-        <a href="#">
+      <li>
+        <a class="card card-manufacturer" href="#">
           <img alt="Ссылка на сайт производителя Lg" src="img/index/manufacturer-lg.png" width="121" height="73">
         </a>
       </li>
-      <li class="card card-manufacturer">
-        <a href="#">
+      <li>
+        <a class="card card-manufacturer" href="#">
           <img alt="Ссылка на сайт производителя Aeg" src="img/index/manufacturer-aeg.png" width="151" height="96">
         </a>
       </li>
-      <li class="card card-manufacturer">
-        <a href="#">
+      <li>
+        <a class="card card-manufacturer" href="#">
           <img alt="Ссылка на сайт производителя Metabo" src="img/index/manufacturer-metabo.png" width="204"
                height="69">
         </a>
@@ -370,7 +382,7 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <button class="button button--about-us">Подробнее о компании</button>
+      <a class="button button--about-us" href="#">Подробнее о компании</a>
     </section>
     <section class="contact-section">
       <h2 class="title">Контакты</h2>
@@ -439,17 +451,17 @@
       <ul class="social-links reset-list">
         <li>
           <a class="social-link" href="#">
-            <img src="img/footer/logo-vk.svg" alt="Вконтакте">
+            <img src="img/footer/logo-vk.svg" alt="Вконтакте" width="26" height="15">
           </a>
         </li>
         <li>
           <a class="social-link" href="#">
-            <img src="img/footer/logo-fb.svg" alt="Фейсбук">
+            <img src="img/footer/logo-fb.svg" alt="Фейсбук" width="12" height="22">
           </a>
         </li>
         <li>
           <a class="social-link" href="#">
-            <img src="img/footer/logo-inst.svg" alt="Инстаграм">
+            <img src="img/footer/logo-inst.svg" alt="Инстаграм" width="21" height="21">
           </a>
         </li>
       </ul>
@@ -461,7 +473,7 @@
         </p>
         <p class="feedback-paragraph">
           Разработано —<br>
-          <a href="#">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </section>
     </div>
@@ -481,7 +493,8 @@
       </label>
       <label class="label label-textarea">
         Текст письма
-        <textarea class="input-text textarea--form-grid input-textarea" name="letter" placeholder="В свободной форме"></textarea>
+        <textarea class="input-text textarea--form-grid input-textarea" name="letter"
+                  placeholder="В свободной форме"></textarea>
       </label>
     </div>
     <div class="background">
@@ -515,8 +528,8 @@
   </div>
   <button class="button button--modal-close button--addCard-close"></button>
 </section>
-<script src="js/add_card.js"></script>
-<script src="js/map.js"></script>
-<script src="js/modal.js"></script>
+<script src="js/min_add.js"></script>
+<script src="js/min_map.js"></script>
+<script src="js/min_modal.js"></script>
 </body>
 </html>
