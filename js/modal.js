@@ -47,7 +47,7 @@ formWriteUs.addEventListener(`submit`, function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
+  if(e.key === "Escape") {
     if (writeUsSection.classList.contains(`form-section--show`)) {
       evt.preventDefault();
       writeUsSection.classList.remove(`form-section--show`);

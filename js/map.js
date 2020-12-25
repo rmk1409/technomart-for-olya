@@ -13,7 +13,7 @@ mapClose.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
+  if(e.key === "Escape") {
     if (mapSection.classList.contains("section-map--show")) {
       evt.preventDefault();
       mapSection.classList.remove("section-map--show");

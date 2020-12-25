@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин строительных материалов и инструментов для ремонта</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/min_normalize.css" rel="stylesheet">
   <link href="css/min_style.css" rel="stylesheet">
 </head>
 <body class="page-body">
@@ -22,7 +21,11 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search">Поиск:</label>
           <div class="search">
-            <input type="text" name="search" placeholder="Поиск:" id="search">
+            <input class="input-nav" type="text" name="search" placeholder="Поиск:" id="search">
+            <svg class="search_icon" width="17" height="17" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd"
+                    d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z"></path>
+            </svg>
           </div>
         </form>
         <ul class="nav-user-list reset-list">
@@ -49,7 +52,7 @@
           </p>
         </div>
         <div class="contact-header">
-          <a class="tel-number-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <a class="tel-number-header" href="tel:+78125550555" aria-label="Контактный номер телефона">+7 (812) 555-05-55</a>
           <address class="address-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         </div>
         <ul class="personal-area reset-list">
@@ -119,13 +122,17 @@
       <section class="section-gallery">
         <ul class="reset-list">
           <li class="popular-category-gallery popular-category-gallery--perforators">
-            <h3>Перфораторы</h3>
-            <p>Настоящие мужские игрушки</p>
+            <div class="black-background">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+            </div>
             <a class="button" href="catalog.html">Открыть каталог</a>
           </li>
           <li class="popular-category-gallery popular-category-gallery--drills">
-            <h3>Дрели</h3>
-            <p>Соседям на радость</p>
+            <div class="black-background">
+              <h3>Дрели</h3>
+              <p>Соседям на радость</p>
+            </div>
             <a class="button" href="catalog.html">Открыть каталог</a>
           </li>
         </ul>
@@ -161,7 +168,7 @@
       <li>
         <article class="card">
           <div class="product-photo">
-            <img alt="Карточка товара Перфоратора BOSCH BFG 9000" src="img/index/BOSCHBFG9000.png" width="184"
+            <img alt="Карточка товара Перфоратора BOSCH BFG 9000" src="img/index/bosh9000.png" width="184"
                  height="164">
           </div>
           <h3>
@@ -169,15 +176,15 @@
             BFG 9000
           </h3>
           <p>32500 Р.</p>
-          <button class="button button--cost">25500 Р.</button>
+          <button class="button button--cost" type="button">25500 Р.</button>
           <section class="section-hover-card">
             <h4 class="visually-hidden">Наведение на карту</h4>
             <ul class="reset-list">
               <li>
-                <button class="button button--hover-card button--buy">Купить</button>
+                <button class="button button--hover-card button--buy" type="button">Купить</button>
               </li>
               <li>
-                <button class="button button--hover-card button--marker">В закладки</button>
+                <button class="button button--hover-card button--marker" type="button">В закладки</button>
               </li>
             </ul>
           </section>
@@ -186,7 +193,7 @@
       <li>
         <article class="card card--new">
           <div class="product-photo">
-            <img alt="Карточка товара Перфоратора BOSCH BFG 3000" src="img/index/BOSCHBFG3000.png" width="127"
+            <img alt="Карточка товара Перфоратора BOSCH BFG 3000" src="img/index/bosh3000.png" width="127"
                  height="112">
           </div>
           <h3>
@@ -194,15 +201,15 @@
             BFG 3000
           </h3>
           <p>22500 Р.</p>
-          <button class="button button--cost">15500 Р.</button>
+          <button class="button button--cost" type="button">15500 Р.</button>
           <section class="section-hover-card">
             <h4 class="visually-hidden">Наведение на карту</h4>
             <ul class="reset-list">
               <li>
-                <button class="button button--hover-card button--buy">Купить</button>
+                <button class="button button--hover-card button--buy" type="button">Купить</button>
               </li>
               <li>
-                <button class="button button--hover-card button--marker">В закладки</button>
+                <button class="button button--hover-card button--marker" type="button">В закладки</button>
               </li>
             </ul>
           </section>
@@ -211,7 +218,7 @@
       <li>
         <article class="card">
           <div class="product-photo">
-            <img alt="Карточка товара Перфоратора BOSCH BFG 6000" src="img/index/BOSCHBFG6000.png" width="144"
+            <img alt="Карточка товара Перфоратора BOSCH BFG 6000" src="img/index/bosh6000.png" width="144"
                  height="128">
           </div>
           <h3>
@@ -219,15 +226,15 @@
             BFG 6000
           </h3>
           <p>30500 Р.</p>
-          <button class="button button--cost">25500 Р.</button>
+          <button class="button button--cost" type="button">25500 Р.</button>
           <section class="section-hover-card">
             <h4 class="visually-hidden">Наведение на карту</h4>
             <ul class="reset-list">
               <li>
-                <button class="button button--hover-card button--buy">Купить</button>
+                <button class="button button--hover-card button--buy" type="button">Купить</button>
               </li>
               <li>
-                <button class="button button--hover-card button--marker">В закладки</button>
+                <button class="button button--hover-card button--marker" type="button">В закладки</button>
               </li>
             </ul>
           </section>
@@ -236,7 +243,7 @@
       <li>
         <article class="card card--new">
           <div class="product-photo">
-            <img alt="Карточка товара Перфоратора BOSCH BFG 2000" src="img/index/BOSCHBFG2000.png" width="127"
+            <img alt="Карточка товара Перфоратора BOSCH BFG 2000" src="img/index/bosh2000.png" width="127"
                  height="112">
           </div>
           <h3>
@@ -244,15 +251,15 @@
             BFG 2000
           </h3>
           <p>22500 Р.</p>
-          <button class="button button--cost">12500 Р.</button>
+          <button class="button button--cost" type="button">12500 Р.</button>
           <section class="section-hover-card">
             <h4 class="visually-hidden">Наведение на карту</h4>
             <ul class="reset-list">
               <li>
-                <button class="button button--hover-card button--buy">Купить</button>
+                <button class="button button--hover-card button--buy" type="button">Купить</button>
               </li>
               <li>
-                <button class="button button--hover-card button--marker">В закладки</button>
+                <button class="button button--hover-card button--marker" type="button">В закладки</button>
               </li>
             </ul>
           </section>
@@ -323,13 +330,13 @@
       <div class="services-grid">
         <ul class="button-services-group reset-list">
           <li>
-            <button class="button button--services button--services-active">Доставка</button>
+            <button class="button button--services button--services-active" type="button">Доставка</button>
           </li>
           <li>
-            <button class="button button--services">Гарантия</button>
+            <button class="button button--services" type="button">Гарантия</button>
           </li>
           <li>
-            <button class="button button--services">Кредит</button>
+            <button class="button button--services" type="button">Кредит</button>
           </li>
         </ul>
         <ul class="reset-list">
@@ -423,7 +430,7 @@
       </ul>
       <address class="address-footer">
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <a href="tel:+78125550555" aria-label="Контактный номер телефона">+7 (812) 555-05-55</a>
       </address>
       <ul class="footer-nav footer-nav--popular reset-list">
         <li>
@@ -499,7 +506,7 @@
     </div>
     <div class="background">
       <div class="button--form-container">
-        <button class="button button--form" type="submit">Отравить</button>
+        <button class="button button--form" type="submit">Отправить</button>
       </div>
     </div>
   </form>

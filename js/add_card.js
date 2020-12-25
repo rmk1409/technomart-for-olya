@@ -15,7 +15,7 @@ addCardClose.addEventListener('click', function (evt) {
 });
 
 window.addEventListener('keydown', function (evt) {
-  if (evt.keyCode === 27) {
+  if(e.key === "Escape") {
     if (mapSection.classList.contains('section-add-to-card--show')) {
       evt.preventDefault();
       mapSection.classList.remove('section-add-to-card--show');
