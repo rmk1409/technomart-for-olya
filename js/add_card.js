@@ -15,10 +15,10 @@ addCardClose.addEventListener('click', function (evt) {
 });
 
 window.addEventListener('keydown', function (evt) {
-  if(e.key === "Escape") {
-    if (mapSection.classList.contains('section-add-to-card--show')) {
+  if(evt.key === "Escape") {
+    if (addCardSection.classList.contains('section-add-to-card--show')) {
       evt.preventDefault();
-      mapSection.classList.remove('section-add-to-card--show');
+      addCardSection.classList.remove('section-add-to-card--show');
     }
   }
 });

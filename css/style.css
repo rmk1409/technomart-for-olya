@@ -140,7 +140,7 @@ img {
   top: 42px;
   left: 0;
   content: "";
-  width: 219px;
+  width: 220px;
   height: 5px;
   background-color: var(--red-dark-click);
 }
@@ -351,19 +351,19 @@ img {
 }
 
 ::-webkit-input-placeholder {
-  color: var(--white);
+  color: var(--gray);
 }
 
 ::-moz-placeholder {
-  color: var(--white);
+  color: var(--gray);
 }
 
 :-moz-placeholder {
-  color: var(--white);
+  color: var(--gray);
 }
 
 :-ms-input-placeholder {
-  color: var(--white);
+  color: var(--gray);
 }
 
 .nav-user-list {
@@ -1618,6 +1618,7 @@ input[type="number"] {
 }
 
 .legend-subtitle {
+  display: contents;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1763,7 +1764,11 @@ input[type="number"] {
 }
 
 .fieldset-manufacturers {
-  margin-top: 41px;
+  margin-top: 23px;
+  padding-top: 18px;
+  padding-bottom: 22px;
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid  var(--gray);
 }
 
 .fieldset-manufacturers ul {
@@ -1776,7 +1781,7 @@ input[type="number"] {
 }
 
 .fieldset-supply {
-  margin-top: 42px;
+  margin-top: 16px;
 }
 
 .fieldset-supply ul {
@@ -1882,6 +1887,11 @@ input[type="number"] {
 
 .radio-input:checked:disabled + .radio-button {
   background-image: url(../img/catalog/radio/radio-on-blok.svg);
+}
+
+.radio-input:focus + .radio-button {
+  border: 2px solid;
+  border-radius: 50%;
 }
 
 .button--show {
@@ -1994,7 +2004,7 @@ input[type="number"] {
   -ms-grid-columns: 350px 16px 258px 16px 1fr;
   grid-template-columns: 350px 258px 1fr;
   gap: 16px;
-  padding: 33px 0;
+  padding: 31px 0;
 }
 
 .feedback {

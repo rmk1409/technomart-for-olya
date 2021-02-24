@@ -37,7 +37,7 @@ formWriteUs.addEventListener(`submit`, function (evt) {
   if (!(inputName.value && inputEmail.value)) {
     evt.preventDefault();
     writeUsSection.classList.remove('section-wright-us--error');
-    writeUsSection.offsetWidth = writeUsSection.offsetWidth;
+    formWriteUs.offsetWidth = formWriteUs.offsetWidth;
     writeUsSection.classList.add('section-wright-us--error');
   } else {
     if (isStorageSupport) {
@@ -47,11 +47,11 @@ formWriteUs.addEventListener(`submit`, function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  if(e.key === "Escape") {
-    if (writeUsSection.classList.contains(`form-section--show`)) {
+  if(evt.key === "Escape") {
+    if (writeUsSection.classList.contains(`section-wright-us--show`)) {
       evt.preventDefault();
-      writeUsSection.classList.remove(`form-section--show`);
-      writeUsSection.classList.remove("form-section--error");
+      writeUsSection.classList.remove(`section-wright-us--show`);
+      writeUsSection.classList.remove('section-wright-us--error');
     }
   }
 });
